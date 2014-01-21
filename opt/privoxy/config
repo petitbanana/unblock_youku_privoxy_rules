@@ -1,0 +1,35 @@
+# Generally, this file goes in /etc/privoxy/config
+#
+# Tor listens as a SOCKS4a proxy here:
+#forward-socks4a / 127.0.0.1:9050 .
+user-manual ./doc/user-manual
+confdir .
+logdir .
+# actionsfile standard  # Internal purpose, recommended
+#actionsfile default.action   # Main actions file
+#actionsfile user.action      # User customizations
+filterfile default.filter
+filterfile user.filter
+actionsfile cnforward.action
+actionsfile cnfilter.action
+filterfile cnfilter.filter
+
+# Don't log interesting things, only startup messages, warnings and errors
+#logfile logfile
+#jarfile jarfile
+#debug 1
+#debug   0    # show each GET/POST/CONNECT request
+#debug   4096 # Startup banner and warnings
+#debug   8192 # Errors - *we highly recommended enabling this*
+
+#user-manual /usr/share/doc/privoxy/user-manual
+listen-address  0.0.0.0:8123
+listen-address  [::]:8123
+toggle  1
+accept-intercepted-requests 1 
+enable-remote-toggle 1
+enable-edit-actions 1
+enable-remote-http-toggle 1
+buffer-limit 4096
+
+#the binary is from: http://3g.inandroid.cn/bbs/viewthread.php?tid=1116

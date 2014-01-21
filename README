@@ -1,0 +1,11 @@
+unblock_youku_privoxy_rules
+All the privoxy rules for unblock youku
+
+opt\
+Config and files of Privoxy on Android, #80
+
+basicsetting\
+Basic config of Privoxy on routers, #106
+
+reverseproxysetting\
+Reverse proxy config of Privoxy on routers, #106
