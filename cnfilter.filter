@@ -70,17 +70,17 @@ s|"restrictedCopyright":\[.*\],|"restrictedCopyright":[],|
 
 FILTER: iqiyiappsuck iqiyi app kills ad and allow download
 s|"show_ad":1|"show_ad":0|g
-s|"skip_ad":0|"skip_ad":1|g
+s|"skip_ad":1|"skip_ad":0|g
 s|"vip7":0|"vip7":1|g
-s|"download_limit":5|"download_limit":0|g
+s|"download_limit":\d|"download_limit":0|g
 s|_dl":"0|_dl":"1|ig
 s|\x5f\x64\x6c\x53(.)\x01\x30\x53|\x5f\x64\x6c\x53$1\x01\x31\x53|g
 s|"enableMiaozhenSDK":1|"enableMiaozhenSDK":0|g
 s|"enableAdMasterSDK":1|"enableAdMasterSDK":0|g
 s|"enableMiaozhenSDK\\":1|"enableMiaozhenSDK\\":0|g
 s|"enableAdMasterSDK\\":1|"enableAdMasterSDK\\":0|g
-s|"duration":\d+|"duration":0|g
-#s|"type":\d|"type":0|g
+s|"duration":[0-9][0-9]|"duration":00|g
+s|"duration":\d|"duration":0|g
+s|"type":\d,"slotExtras"|"type":0,"slotExtras"|g
 #s|"creativeType":"video_m3u8"|"creativeType":""|g
-#s|finalUrl":"http.*\.m3u8"|finalUrl":""|ig
-
+#s|finalUrl":"http(.*)\.m3u8"|finalUrl":"http$1\.m3u8"|g
