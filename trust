@@ -178,6 +178,7 @@
 # The next two lines make sure that the user can access Privoxy's
 # CGI pages, without automatically trusting their links.
 ~localhost:8888/proxy.pac
+~127.0.0.1:8888/proxy.pac
 ~123.125.123.80 # Trusted referrer was: http://tv.sohu.com/20100907/n274764864.shtml
 ~61.135.183.50 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140109/Main.swf
 ~123.125.123.81 # Trusted referrer was: http://tv.sohu.com/20140111/n393346742.shtml
