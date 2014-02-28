@@ -25,6 +25,10 @@ s/OVERSEA\|../CNC\|BeiJing/i
 FILTER: tudousuck Replace tvcCode=5001 with tvcCode=-1
 s|,tvcCode: '5001'|,tvcCode: '\-1'|g
 s|,tvcCode: '1001'|,tvcCode: '\-1'|g
+s|,tvcCode: '\-2'|,tvcCode: '\-1'|g
+s|"message":"5001",|"message":"\-1",|g
+s|"message":"1001",|"message":"\-1",|g
+s|"message":"\-2",|"message":"\-1",|g
 
 FILTER: letvlivesuck Replace playStatus 1 with 0
 s|"playStatus":1|"playStatus":0|g
@@ -81,6 +85,6 @@ s|"enableMiaozhenSDK\\":1|"enableMiaozhenSDK\\":0|g
 s|"enableAdMasterSDK\\":1|"enableAdMasterSDK\\":0|g
 s|"duration":[0-9][0-9]|"duration":00|g
 s|"duration":\d|"duration":0|g
-s|"type":\d,"slotExtras"|"type":0,"slotExtras"|g
+#s|"type":\d,"slotExtras"|"type":0,"slotExtras"|g
 #s|"creativeType":"video_m3u8"|"creativeType":""|g
 #s|finalUrl":"http(.*)\.m3u8"|finalUrl":"http$1\.m3u8"|g

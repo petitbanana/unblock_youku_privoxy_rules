@@ -61,6 +61,9 @@ play.api.3g.tudou.com/v.*
 {+redirect{s@^http://play.api.3g.youku.com/common/v3/hasadv/play@http://play.api.3g.youku.com/common/v3/play@}}
 play.api.3g.youku.com/common/v3/hasadv/play.*
 
+{+redirect{s@^http://ark.letv.com/s\?(.*)ark=\d+(.*)@http://ark.letv.com/s?$1ark=2$2@}}
+ark.letv.com/s\?.*ark=\d+.*
+
 #    loading too slow on my adsl, might not use ATM.
 #{ +filter{iqiyisuck} +force-text-mode +forward-override{forward .} }
 #data.video.qiyi.com/v\.(f4v|ts).*
@@ -69,6 +72,7 @@ play.api.3g.youku.com/common/v3/hasadv/play.*
 .tudou.com/listplay/.*
 .tudou.com/albumplay/.*
 .tudou.com/programs/view/.*
+.tudou.com/outplay/goto/getTvcCode\.action.*
 
 { +filter{letvlivesuck} +force-text-mode +forward-override{forward .} }
 api.letv.com/streamblock.*

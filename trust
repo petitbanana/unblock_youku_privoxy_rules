@@ -177,9 +177,31 @@
 
 # The next two lines make sure that the user can access Privoxy's
 # CGI pages, without automatically trusting their links.
-~localhost:8888/proxy.pac
+
 ~127.0.0.1:8888/proxy.pac
+~localhost:8888/proxy.pac
 ~123.125.123.80 # Trusted referrer was: http://tv.sohu.com/20100907/n274764864.shtml
 ~61.135.183.50 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140109/Main.swf
 ~123.125.123.81 # Trusted referrer was: http://tv.sohu.com/20140111/n393346742.shtml
 ~123.125.123.82 # Trusted referrer was: http://tv.sohu.com/20120814/n350647891.shtml
+~61.160.228.15 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~61.135.177.26 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~66.102.246.141 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~66.102.246.146 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~123.126.104.21 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~60.28.168.4 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~27.221.18.15 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~123.129.214.126 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~61.135.176.75 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~61.135.176.240 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~60.28.168.5 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~27.221.18.14 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~61.135.176.247 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~123.126.104.28 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~123.126.104.14 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~60.210.16.215 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~61.135.176.220 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~123.126.104.16 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~60.28.168.28 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~61.135.176.241 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~123.126.104.24 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf

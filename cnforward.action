@@ -19,7 +19,8 @@ api.youku.com/player/.*
 v2.tudou.com/.*
 www.tudou.com/a/.*
 www.tudou.com/v/.*
-www.tudou.com/outplay/goto/getTvcCode.*
+#    script filter by privoxy, proxy not needed for tudou tvc
+#www.tudou.com/outplay/goto/getTvcCode.*
 #    script filter by privoxy, proxy not needed for qqmusic
 #s.plcloud.music.qq.com/fcgi-bin/p\.fcg.*
 hot.vrs.sohu.com/.*
@@ -69,6 +70,7 @@ v.iask.com/v_play_ipad\.cx\.php.*
 tv.weibo.com/player/.*
 wtv.v.iask.com/.*\.m3u8
 wtv.v.iask.com/mcdn\.php.*
+video.sina.com.cn/interface/l/u/getFocusStatus\.php
 www.yinyuetai.com/insite/.*
 www.yinyuetai.com/main/get-.*
 .dpool.sina.com.cn/iplookup.*
