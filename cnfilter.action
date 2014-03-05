@@ -58,8 +58,8 @@ api.3g.tudou.com/todou/play/detail/desc.*
 { +filter{youkuappsuck} +force-text-mode }
 play.api.3g.tudou.com/v.*
 
-{+redirect{s@^http://play.api.3g.youku.com/common/v3/hasadv/play@http://play.api.3g.youku.com/common/v3/play@}}
-play.api.3g.youku.com/common/v3/hasadv/play.*
+#{+redirect{s@^http://play.api.3g.youku.com/common/v3/hasadv/play@http://play.api.3g.youku.com/common/v3/play@}}
+#play.api.3g.youku.com/common/v3/hasadv/play.*
 
 {+redirect{s@^http://ark.letv.com/s\?(.*)ark=\d+(.*)@http://ark.letv.com/s?$1ark=2$2@}}
 ark.letv.com/s\?.*ark=\d+.*
