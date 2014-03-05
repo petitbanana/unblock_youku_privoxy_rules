@@ -94,7 +94,7 @@ api.3g.youku.com/videos/.*/download.*
 api.3g.youku.com/common/v3/play.*
 tv.api.3g.youku.com/openapi-wireless/v3/play/address.*
 tv.api.3g.youku.com/common/v3/play.*
-#play.api.3g.youku.com/common/v3/hasadv/play.*
+play.api.3g.youku.com/common/v3/hasadv/play.*
 play.api.3g.youku.com/common/v3/play.*
 play.api.3g.youku.com/v3/play/address.*
 play.api.3g.tudou.com/v.*
