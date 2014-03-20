@@ -88,3 +88,9 @@ s|"duration":\d|"duration":0|g
 #s|"type":\d,"slotExtras"|"type":0,"slotExtras"|g
 #s|"creativeType":"video_m3u8"|"creativeType":""|g
 #s|finalUrl":"http(.*)\.m3u8"|finalUrl":"http$1\.m3u8"|g
+
+FILTER: wildcardcrossdomain change the crossdomain xml to wildcard
+s|.*||g
+s|\x0d||g
+s|\x0a||g
+s||<?xml version="1.0" encoding="UTF-8"?>\x0d\x0a<cross-domain-policy>\x0d\x0a <allow-access-from domain="*"/>\x0d\x0a</cross-domain-policy>\x0d\x0a|

@@ -93,8 +93,9 @@ api.3g.youku.com/openapi-wireless/videos/.*/download.*
 api.3g.youku.com/videos/.*/download.*
 api.3g.youku.com/common/v3/play.*
 tv.api.3g.youku.com/openapi-wireless/v3/play/address.*
+tv.api.3g.youku.com/common/v3/hasadv/play.*
 tv.api.3g.youku.com/common/v3/play.*
-#play.api.3g.youku.com/common/v3/hasadv/play.*
+play.api.3g.youku.com/common/v3/hasadv/play.*
 play.api.3g.youku.com/common/v3/play.*
 play.api.3g.youku.com/v3/play/address.*
 play.api.3g.tudou.com/v.*
@@ -131,6 +132,7 @@ openapi.youku.com/.*
 61.135.196.99/.*
 220.181.185.150/.*
 httpbin.org/get
+tms.is.ysten.com:8080/yst-tms/login\.action\?.*
 180.153.225.136/.*
 118.244.244.124/.*
 210.129.145.150/.*
