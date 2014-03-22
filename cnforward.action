@@ -99,6 +99,7 @@ play.api.3g.youku.com/common/v3/hasadv/play.*
 play.api.3g.youku.com/common/v3/play.*
 play.api.3g.youku.com/v3/play/address.*
 play.api.3g.tudou.com/v.*
+tv.api.3g.tudou.com/tv/play\?.*
 api.3g.tudou.com/.*
 api.tv.sohu.com/mobile_user/device/clientconf\.json\?.*
 access.tv.sohu.com/.*

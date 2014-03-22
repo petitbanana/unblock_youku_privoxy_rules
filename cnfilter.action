@@ -58,10 +58,7 @@ api.3g.tudou.com/todou/play/detail/desc.*
 { +filter{youkuappsuck} +force-text-mode }
 play.api.3g.tudou.com/v.*
 
-<<<<<<< HEAD
 #    Blocked by server
-=======
->>>>>>> 27688ed1f852208bfda98996582769ba18377dac
 #{+redirect{s@^http://play.api.3g.youku.com/common/v3/hasadv/play@http://play.api.3g.youku.com/common/v3/play@}}
 #play.api.3g.youku.com/common/v3/hasadv/play.*
 

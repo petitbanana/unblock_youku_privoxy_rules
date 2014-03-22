@@ -91,6 +91,6 @@ s|"duration":\d|"duration":0|g
 
 FILTER: wildcardcrossdomain change the crossdomain xml to wildcard
 s|.*||g
-s|\x0d||g
-s|\x0a||g
+#s|\x0d||g
+#s|\x0a||g
 s||<?xml version="1.0" encoding="UTF-8"?>\x0d\x0a<cross-domain-policy>\x0d\x0a <allow-access-from domain="*"/>\x0d\x0a</cross-domain-policy>\x0d\x0a|

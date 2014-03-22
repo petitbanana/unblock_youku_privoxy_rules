@@ -63,6 +63,7 @@
 ~tv.api.3g.youku.com
 ~play.api.3g.youku.com
 ~play.api.3g.tudou.com
+~tv.api.3g.tudou.com
 ~api.3g.tudou.com
 ~api.tv.sohu.com
 ~access.tv.sohu.com
@@ -93,7 +94,7 @@
 ~118.244.244.124
 ~210.129.145.150
 ~182.16.230.98
-~tms.is.ysten.com
+~tms.is.ysten.com:8080
 
 ~vdo.mobile.tvb.com
 
