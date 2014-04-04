@@ -17,9 +17,12 @@ ip.kugou.com/check/isCn/.*
 { +filter{duomiappsuck} +force-text-mode +forward-override{forward .} }
 serviceinfo.sdk.duomi.com/api/serviceinfo/getserverlist.*
 
-{+filter{163musicappsuck} +force-text-mode +forward-override{forward .}}
+{+filter{163musicappsuck} +force-text-mode }
 music.163.com/api/copyright/restrict/\?.*
 music.163.com/api/batch
+
+{+filter{xiamimusicsuck} +force-text-mode }
+spark.api.xiami.com/api\?.*method=Songs.getTrackDetail.*
 
 { +filter{mytvappsuck} +force-text-mode +forward-override{forward .} }
 vdo.mobile.tvb.com/checkCountryAllow\.php
@@ -28,6 +31,7 @@ vdo.mobile.tvb.com/checkCountryAllow\.php
 api.letv.com/getipgeo
 hot.vrs.letv.com/.*
 static.app.m.letv.com/android/mod/mob/ctl/.*/act/detail/id/.*
+static.meizi.app.m.letv.com/android/mod/mob/ctl/.*/act/detail/id/.*
 
 { +filter{sohuappsuck} +force-text-mode }
 api.tv.sohu.com/mobile_user/device/clientconf\.json\?.*
@@ -65,6 +69,9 @@ play.api.3g.tudou.com/v.*
 {+redirect{s@^http://ark.letv.com/s\?(.*)ark=\d+(.*)@http://ark.letv.com/s?$1ark=2$2@}}
 ark.letv.com/s\?.*ark=\d+.*
 
+{+redirect{s@^http://api@http://v@}}
+api.youku.com/player/getPlayList/VideoIDS/.*
+
 { +filter{wildcardcrossdomain} +force-text-mode +forward-override{forward .} }
 .youku.com/crossdomain\.xml.*
 .qiyi.com/crossdomain\.xml.*
@@ -87,6 +94,7 @@ vv.video.qq.com/getvmind\?.*
 .tudou.com/albumplay/.*
 .tudou.com/programs/view/.*
 .tudou.com/outplay/goto/getTvcCode\.action.*
+.tudou.com/tvp/alist\.action\?.*
 
 { +filter{letvlivesuck} +force-text-mode +forward-override{forward .} }
 api.letv.com/streamblock.*

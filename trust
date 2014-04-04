@@ -69,6 +69,7 @@
 ~access.tv.sohu.com
 ~iface2.iqiyi.com
 ~dynamic.app.m.letv.com
+~dynamic.meizi.app.m.letv.com
 ~listso.m.areainfo.ppstream.com
 ~m.letv.com
 ~bkvv.video.qq.com
@@ -83,6 +84,7 @@
 ~tingapi.ting.baidu.com
 ~serviceinfo.sdk.duomi.com
 ~music.163.com
+~spark.api.xiami.com
 ~iplocation.geo.qiyi.com
 ~sns.video.qq.com
 ~v5.pc.duomi.com

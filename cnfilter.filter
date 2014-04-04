@@ -12,6 +12,9 @@ s|"flag":0|"flag":1|g
 FILTER: qqmusicsuck Replace MusicJsonCallback({ret:0}) with MusicJsonCallback({ret:1})
 s|ret:0|ret:1|g
 
+FILTER: xiamimusicsuck Replace play_authority":0 with play_authority":1
+s|play_authority":0|play_authority":1|g
+
 FILTER: mytvhdsuck Replace 0 with 1
 s|0|1|
 
@@ -23,12 +26,15 @@ FILTER: iqiyisuck Replace location(t) with CNC
 s/OVERSEA\|../CNC\|BeiJing/i
 
 FILTER: tudousuck Replace tvcCode=5001 with tvcCode=-1
-s|,tvcCode: '5001'|,tvcCode: '\-1'|g
-s|,tvcCode: '1001'|,tvcCode: '\-1'|g
-s|,tvcCode: '\-2'|,tvcCode: '\-1'|g
-s|"message":"5001",|"message":"\-1",|g
-s|"message":"1001",|"message":"\-1",|g
-s|"message":"\-2",|"message":"\-1",|g
+s|,tvcCode: '5001'|,tvcCode: '-1'|g
+s|,tvcCode: '1001'|,tvcCode: '-1'|g
+s|,tvcCode: '\-2'|,tvcCode: '-1'|g
+s|"message":"5001",|"message":"-1",|g
+s|"message":"1001",|"message":"-1",|g
+s|"message":"\-2",|"message":"-1",|g
+s|"tvcCode":"5001|"tvcCode":"-1|g
+s|"tvcCode":"1001|"tvcCode":"-1|g
+s|"tvcCode":"\-2|"tvcCode":"-1|g
 
 FILTER: letvlivesuck Replace playStatus 1 with 0
 s|"playStatus":1|"playStatus":0|g
@@ -77,6 +83,7 @@ s|"show_ad":1|"show_ad":0|g
 s|"skip_ad":1|"skip_ad":0|g
 s|"vip7":0|"vip7":1|g
 s|"download_limit":\d|"download_limit":0|g
+s|_dl":0|_dl":1|ig
 s|_dl":"0|_dl":"1|ig
 s|\x5f\x64\x6c\x53(.)\x01\x30\x53|\x5f\x64\x6c\x53$1\x01\x31\x53|g
 s|"enableMiaozhenSDK":1|"enableMiaozhenSDK":0|g

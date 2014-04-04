@@ -105,6 +105,7 @@ api.tv.sohu.com/mobile_user/device/clientconf\.json\?.*
 access.tv.sohu.com/.*
 iface2.iqiyi.com/php/xyz/iface/.*
 dynamic.app.m.letv.com/.*/dynamic\.php\?.*playid.*
+dynamic.meizi.app.m.letv.com/.*/dynamic\.php\?.*playid.*
 listso.m.areainfo.ppstream.com/ip/q\.php.*
 #    script filter by privoxy, proxy not needed for letv
 #api.letv.com/getipgeo
@@ -126,6 +127,8 @@ tingapi.ting.baidu.com/v1/restserver/ting\?.*method=baidu\.ting\.song.*
 #serviceinfo.sdk.duomi.com/api/serviceinfo/getserverlist.*
 #   script filter by privoxy, proxy not needed for 163music
 #music.163.com/api/copyright/restrict/\?.*
+#   script filter by privoxy, proxy not needed for xiamimusic
+#spark.api.xiami.com/api\?.*method=Songs.getTrackDetail.*
 iplocation.geo.qiyi.com/cityjson
 sns.video.qq.com/tunnel/fcgi-bin/tunnel.*
 v5.pc.duomi.com/single-ajaxsingle-isban.*
