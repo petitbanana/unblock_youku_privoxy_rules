@@ -17,12 +17,12 @@ ip.kugou.com/check/isCn/.*
 { +filter{duomiappsuck} +force-text-mode +forward-override{forward .} }
 serviceinfo.sdk.duomi.com/api/serviceinfo/getserverlist.*
 
-{+filter{163musicappsuck} +force-text-mode }
+{+filter{163musicappsuck} +force-text-mode +forward-override{forward .} }
 music.163.com/api/copyright/restrict/\?.*
 music.163.com/api/batch
 
-{+filter{xiamimusicsuck} +force-text-mode }
-spark.api.xiami.com/api\?.*method=Songs.getTrackDetail.*
+{+filter{xiamimusicsuck} +force-text-mode +forward-override{forward .} }
+spark.api.xiami.com/api\?.*method=Songs\.getTrackDetail.*
 
 { +filter{mytvappsuck} +force-text-mode +forward-override{forward .} }
 vdo.mobile.tvb.com/checkCountryAllow\.php
@@ -82,12 +82,12 @@ api.youku.com/player/getPlayList/VideoIDS/.*
 .ku6cdn.com/crossdomain\.xml.*
 
 #{+redirect{s@^http://vv.video.qq.com/getvmind\?(.*)vids=(.*)@^http://vv.video.qq.com/getvmind\?$1vids=@}}
-{+block{QQVads}}
+{+block{Video ads}}
 vv.video.qq.com/getvmind\?.*
+iface.iqiyi.com/api/getNewAdInfo.*
 
-#    loading too slow on my adsl, might not use ATM.
-#{ +filter{iqiyisuck} +force-text-mode +forward-override{forward .} }
-#data.video.qiyi.com/v\.(f4v|ts).*
+{ +filter{iqiyisuck} +force-text-mode +forward-override{forward .} }
+data.video.qiyi.com/v\.(f4v|ts)\?.*
 
 { +filter{tudousuck} +force-text-mode +forward-override{forward .} }
 .tudou.com/listplay/.*

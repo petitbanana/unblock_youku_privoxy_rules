@@ -22,8 +22,8 @@ FILTER: mytvappsuck Replace country=HK, accept=true
 s|"country":"..|"country":"HK|
 s|"accept":false|"accept":true|
 
-FILTER: iqiyisuck Replace location(t) with CNC
-s/OVERSEA\|../CNC\|BeiJing/i
+FILTER: iqiyisuck Replace location(t) with CT/CNC
+s/OVERSEA\|.*\-/CT\|BeiJing-/Ui
 
 FILTER: tudousuck Replace tvcCode=5001 with tvcCode=-1
 s|,tvcCode: '5001'|,tvcCode: '-1'|g
@@ -86,6 +86,7 @@ s|"download_limit":\d|"download_limit":0|g
 s|_dl":0|_dl":1|ig
 s|_dl":"0|_dl":"1|ig
 s|\x5f\x64\x6c\x53(.)\x01\x30\x53|\x5f\x64\x6c\x53$1\x01\x31\x53|g
+s|\x5f\x64\x6c\x49(.)(.)(.)(.)\x53|\x5f\x64\x6c\x49$1$1$1\x01\x53|g
 s|"enableMiaozhenSDK":1|"enableMiaozhenSDK":0|g
 s|"enableAdMasterSDK":1|"enableAdMasterSDK":0|g
 s|"enableMiaozhenSDK\\":1|"enableMiaozhenSDK\\":0|g

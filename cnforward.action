@@ -28,8 +28,8 @@ live.tv.sohu.com/live/player.*
 #    script filter by privoxy, proxy not needed for letv
 #hot.vrs.letv.com/.*
 #g3.letv.cn/.*
-#    script filter by privoxy, but not used due to loading speed
-data.video.qiyi.com/.*
+#    script filter by privoxy, 
+#data.video.qiyi.com/.*
 220.181.61.229/.*
 61.135.183.45/.*
 61.135.183.46/.*
@@ -39,17 +39,18 @@ data.video.qiyi.com/.*
 220.181.118.181/.*
 123.126.48.47/.*
 123.126.48.48/.*
-vv.video.qq.com/getinfo.*
-tt.video.qq.com/getinfo.*
-ice.video.qq.com/getinfo.*
-tjsa.video.qq.com/getinfo.*
-a10.video.qq.com/getinfo.*
-xyy.video.qq.com/getinfo.*
-vcp.video.qq.com/getinfo.*
-vsh.video.qq.com/getinfo.*
-vbj.video.qq.com/getinfo.*
-bobo.video.qq.com/getinfo.*
-flvs.video.qq.com/getinfo.*
+vv.video.qq.com/getvinfo.*
+tt.video.qq.com/getvinfo.*
+ice.video.qq.com/getvinfo.*
+tjsa.video.qq.com/gevtinfo.*
+a10.video.qq.com/getvinfo.*
+xyy.video.qq.com/getvinfo.*
+vcq.video.qq.com/getvinfo.*
+vsh.video.qq.com/getvinfo.*
+vbj.video.qq.com/getvinfo.*
+bobo.video.qq.com/getvinfo.*
+flvs.video.qq.com/getvinfo.*
+bkvv.video.qq.com/getvinfo.*
 rcgi.video.qq.com/report.*
 geo.js.kankan.xunlei.com/.*
 web-play.pptv.com/.*
@@ -110,8 +111,6 @@ listso.m.areainfo.ppstream.com/ip/q\.php.*
 #    script filter by privoxy, proxy not needed for letv
 #api.letv.com/getipgeo
 m.letv.com/api/geturl\?.*
-vv.video.qq.com/getvinfo.*
-bkvv.video.qq.com/getvinfo.*
 3g.music.qq.com/.*
 mqqplayer.3g.qq.com/.*
 proxy.music.qq.com/.*
