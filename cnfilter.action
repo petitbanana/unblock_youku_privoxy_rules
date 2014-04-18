@@ -23,6 +23,7 @@ music.163.com/api/batch
 
 {+filter{xiamimusicsuck} +force-text-mode +forward-override{forward .} }
 spark.api.xiami.com/api\?.*method=Songs\.getTrackDetail.*
+spark.api.xiami.com/api\?.*method=Songs.detail.*
 
 { +filter{mytvappsuck} +force-text-mode +forward-override{forward .} }
 vdo.mobile.tvb.com/checkCountryAllow\.php
