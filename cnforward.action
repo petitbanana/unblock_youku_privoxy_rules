@@ -40,6 +40,7 @@ live.tv.sohu.com/live/player.*
 123.126.48.47/.*
 123.126.48.48/.*
 vv.video.qq.com/getvinfo.*
+vv.video.qq.com/getinfo.*
 tt.video.qq.com/getvinfo.*
 ice.video.qq.com/getvinfo.*
 tjsa.video.qq.com/gevtinfo.*
@@ -105,6 +106,7 @@ api.3g.tudou.com/.*
 api.tv.sohu.com/mobile_user/device/clientconf\.json\?.*
 access.tv.sohu.com/.*
 iface2.iqiyi.com/php/xyz/iface/.*
+cache.m.iqiyi.com/jp/tmts/.*/\?.*type=.*
 dynamic.app.m.letv.com/.*/dynamic\.php\?.*playid.*
 dynamic.meizi.app.m.letv.com/.*/dynamic\.php\?.*playid.*
 listso.m.areainfo.ppstream.com/ip/q\.php.*
@@ -128,6 +130,7 @@ tingapi.ting.baidu.com/v1/restserver/ting\?.*method=baidu\.ting\.song.*
 #music.163.com/api/copyright/restrict/\?.*
 #   script filter by privoxy, proxy not needed for xiamimusic
 #spark.api.xiami.com/api\?.*method=Songs.getTrackDetail.*
+#spark.api.xiami.com/api\?.*method=Songs.detail.*
 iplocation.geo.qiyi.com/cityjson
 sns.video.qq.com/tunnel/fcgi-bin/tunnel.*
 v5.pc.duomi.com/single-ajaxsingle-isban.*

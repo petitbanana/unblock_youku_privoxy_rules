@@ -93,6 +93,8 @@ s|"enableMiaozhenSDK\\":1|"enableMiaozhenSDK\\":0|g
 s|"enableAdMasterSDK\\":1|"enableAdMasterSDK\\":0|g
 s|"duration":[0-9][0-9]|"duration":00|g
 s|"duration":\d|"duration":0|g
+s|"ad":1|"ad":0|g
+#s|"adDuration":.*,|"adDuration":0,|Ug
 #s|"type":\d,"slotExtras"|"type":0,"slotExtras"|g
 #s|"creativeType":"video_m3u8"|"creativeType":""|g
 #s|finalUrl":"http(.*)\.m3u8"|finalUrl":"http$1\.m3u8"|g
@@ -102,3 +104,9 @@ s|.*||g
 #s|\x0d||g
 #s|\x0a||g
 s||<?xml version="1.0" encoding="UTF-8"?>\x0d\x0a<cross-domain-policy>\x0d\x0a <allow-access-from domain="*"/>\x0d\x0a</cross-domain-policy>\x0d\x0a|
+
+#FILTER: youkuappad block youku ads trial
+#s|.*||g
+#s|\x0d||g
+#s|\x0a||g
+#s||\#EXTM3U\x0d\x0a\#EXT-X-TARGETDURATION:1\x0d\x0a\#EXT-X-VERSION:2\x0d\x0a\#EXT-X-ENDLIST|
