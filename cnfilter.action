@@ -53,6 +53,7 @@ iface.iqiyi.com/api/initLogin.*
 iface2.iqiyi.com/php/xyz/iface/\?.*
 iface2.iqiyi.com/php/xyz/entry/\?.*
 mixer.cupid.iqiyi.com/mixer\?.*
+cache.m.iqiyi.com/jp/tmts/.*/\?.*type=.*
 
 { +filter{youkuappsuck} +force-text-mode +forward-override{forward .} }
 api.3g.youku.com/layout/phone3_0/shows/.*

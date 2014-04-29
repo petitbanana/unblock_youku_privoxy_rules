@@ -106,6 +106,7 @@ api.3g.tudou.com/.*
 api.tv.sohu.com/mobile_user/device/clientconf\.json\?.*
 access.tv.sohu.com/.*
 iface2.iqiyi.com/php/xyz/iface/.*
+iface2.iqiyi.com/php/xyz/entry/galaxy\.php\?.*
 cache.m.iqiyi.com/jp/tmts/.*/\?.*type=.*
 dynamic.app.m.letv.com/.*/dynamic\.php\?.*playid.*
 dynamic.meizi.app.m.letv.com/.*/dynamic\.php\?.*playid.*

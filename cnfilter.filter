@@ -91,13 +91,17 @@ s|"enableMiaozhenSDK":1|"enableMiaozhenSDK":0|g
 s|"enableAdMasterSDK":1|"enableAdMasterSDK":0|g
 s|"enableMiaozhenSDK\\":1|"enableMiaozhenSDK\\":0|g
 s|"enableAdMasterSDK\\":1|"enableAdMasterSDK\\":0|g
-s|"duration":[0-9][0-9]|"duration":00|g
-s|"duration":\d|"duration":0|g
+s|"enableMiaozhenSDK\\\\\\":1|"enableMiaozhenSDK\\\\\\":0|g
+s|"enableAdMasterSDK\\\\\\":1|"enableAdMasterSDK\\\\\\":0|g
+#s|"duration":[0-9][0-9]|"duration":00|g
+s|"duration":\d+|"duration":0|g
+#s|"pause_ad":[0-9][0-9]|"duration":00|g
+s|"pause_ad":\d+|"duration":0|g
 s|"ad":1|"ad":0|g
-#s|"adDuration":.*,|"adDuration":0,|Ug
-#s|"type":\d,"slotExtras"|"type":0,"slotExtras"|g
-#s|"creativeType":"video_m3u8"|"creativeType":""|g
-#s|finalUrl":"http(.*)\.m3u8"|finalUrl":"http$1\.m3u8"|g
+#s|"mp4_ad_to":.|"mp4_ad_to":0|g
+s|"open_p2p":1|"open_p2p":0|g
+s|"open_p2p_down":1|"open_p2p_down":0|g
+#s|"ad_time_limit":".,.,."|"ad_time_limit":"1,1,1"|g
 
 FILTER: wildcardcrossdomain change the crossdomain xml to wildcard
 s|.*||g
