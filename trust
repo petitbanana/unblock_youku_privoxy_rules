@@ -70,10 +70,12 @@
 ~access.tv.sohu.com
 ~iface2.iqiyi.com
 ~cache.m.iqiyi.com
+~m.letv.com
 ~dynamic.app.m.letv.com
 ~dynamic.meizi.app.m.letv.com
 ~listso.m.areainfo.ppstream.com
-~m.letv.com
+~epg.api.pptv.com
+~play.api.pptv.com
 ~3g.music.qq.com
 ~mqqplayer.3g.qq.com
 ~proxy.music.qq.com
@@ -83,6 +85,7 @@
 ~mobi.kuwo.cn
 ~mobilefeedback.kugou.com
 ~tingapi.ting.baidu.com
+~music.baidu.com
 ~serviceinfo.sdk.duomi.com
 ~music.163.com
 ~spark.api.xiami.com
@@ -100,6 +103,15 @@
 ~tms.is.ysten.com:8080
 
 ~vdo.mobile.tvb.com
+~ark.letv.com
+~static.app.m.letv.com
+~static.meizi.app.m.letv.com
+~bkmobile.video.qq.com
+~mobile.video.qq.com
+~live.qq.com
+~mixer.cupid.iqiyi.com
+~p2sdata.video.qiyi.com
+~pl.youku.com
 
 ######################################################################
 # 
@@ -211,3 +223,10 @@
 ~60.28.168.28 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
 ~61.135.176.241 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
 ~123.126.104.24 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140123/Main.swf
+~70.39.191.27 # Trusted referrer was: http://tv.sohu.com/20130623/n379607363.shtml
+~70.39.191.29 # Trusted referrer was: http://tv.sohu.com/20130623/n379607363.shtml
+~70.39.191.28 # Trusted referrer was: http://tv.sohu.com/20130623/n379607363.shtml
+~220.181.11.118 # Trusted referrer was: http://tv.sohu.com/upload/ifox/v4/user-login.html
+~123.126.104.20 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140327/Main.swf
+~58.216.27.11 # Trusted referrer was: http://tv.sohu.com/upload/swf/20140327/Main.swf
+~61.244.110.76 # Trusted referrer was: http://tv.sohu.com/20131023/n388699998.shtml

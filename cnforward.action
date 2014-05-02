@@ -108,12 +108,15 @@ access.tv.sohu.com/.*
 iface2.iqiyi.com/php/xyz/iface/.*
 iface2.iqiyi.com/php/xyz/entry/galaxy\.php\?.*
 cache.m.iqiyi.com/jp/tmts/.*/\?.*type=.*
-dynamic.app.m.letv.com/.*/dynamic\.php\?.*playid.*
-dynamic.meizi.app.m.letv.com/.*/dynamic\.php\?.*playid.*
-listso.m.areainfo.ppstream.com/ip/q\.php.*
 #    script filter by privoxy, proxy not needed for letv
 #api.letv.com/getipgeo
 m.letv.com/api/geturl\?.*
+dynamic.app.m.letv.com/.*/dynamic\.php\?.*playid.*
+dynamic.meizi.app.m.letv.com/.*/dynamic\.php\?.*playid.*
+listso.m.areainfo.ppstream.com/ip/q\.php.*
+#    script filter by privoxy, proxy not needed for pptv
+#epg.api.pptv.com/detail\.api\?.*
+#play.api.pptv.com/boxplay\.api\?.*
 3g.music.qq.com/.*
 mqqplayer.3g.qq.com/.*
 proxy.music.qq.com/.*
@@ -125,6 +128,7 @@ mobi.kuwo.cn/.*
 #    script filter by privoxy, proxy not needed for kugou
 #mobilefeedback.kugou.com/.*
 tingapi.ting.baidu.com/v1/restserver/ting\?.*method=baidu\.ting\.song.*
+music.baidu.com/data/music/links\?.*
 #   script filter by privoxy, proxy not needed for duomi
 #serviceinfo.sdk.duomi.com/api/serviceinfo/getserverlist.*
 #   script filter by privoxy, proxy not needed for 163music

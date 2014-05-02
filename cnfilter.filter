@@ -11,6 +11,7 @@ s|"flag":0|"flag":1|g
 
 FILTER: qqmusicsuck Replace MusicJsonCallback({ret:0}) with MusicJsonCallback({ret:1})
 s|ret:0|ret:1|g
+s|ret":0|ret":1|g
 
 FILTER: xiamimusicsuck Replace play_authority":0 with play_authority":1
 s|play_authority":0|play_authority":1|g
@@ -44,6 +45,7 @@ s|"userCountry":"..|"userCountry":"CN|
 s|"allowplay":"0|"allowplay":"1|
 s|"ip":"0|"ip":"1|
 s|"download":"0"|"download":"1"|g
+s|"pay":"1"|"pay":"0"|g
 
 FILTER: sohuappsuck sohuvideo app kills ad and allow download
 s|"iplimit":1|"iplimit":0|ig
@@ -73,7 +75,7 @@ s|"overseaip":1|"overseaip":0|g
 
 FILTER: youkuappsuck Replace "limit":1 with "limit":0
 s|"limit":1|"limit":0|g
-s|"limit": 1|"limit": 0|g
+s|"limit":\s1|"limit": 0|g
 
 FILTER: 163musicappsuck Replace restrictedCopyright":[5002,5003,5001], to [],
 s|"restrictedCopyright":\[.*\],|"restrictedCopyright":[],|
@@ -95,13 +97,14 @@ s|"enableMiaozhenSDK\\\\\\":1|"enableMiaozhenSDK\\\\\\":0|g
 s|"enableAdMasterSDK\\\\\\":1|"enableAdMasterSDK\\\\\\":0|g
 #s|"duration":[0-9][0-9]|"duration":00|g
 s|"duration":\d+|"duration":0|g
+s|"duration\\":\d+|"duration\\":0|g
 #s|"pause_ad":[0-9][0-9]|"duration":00|g
-s|"pause_ad":\d+|"duration":0|g
+s|"pause_ad":\d|"duration":0|g
 s|"ad":1|"ad":0|g
 #s|"mp4_ad_to":.|"mp4_ad_to":0|g
 s|"open_p2p":1|"open_p2p":0|g
 s|"open_p2p_down":1|"open_p2p_down":0|g
-#s|"ad_time_limit":".,.,."|"ad_time_limit":"1,1,1"|g
+s|"ad_str":.*\},"1":|},"1":|g
 
 FILTER: wildcardcrossdomain change the crossdomain xml to wildcard
 s|.*||g
@@ -109,8 +112,8 @@ s|.*||g
 #s|\x0a||g
 s||<?xml version="1.0" encoding="UTF-8"?>\x0d\x0a<cross-domain-policy>\x0d\x0a <allow-access-from domain="*"/>\x0d\x0a</cross-domain-policy>\x0d\x0a|
 
-#FILTER: youkuappad block youku ads trial
-#s|.*||g
+FILTER: youkuappad block youku ads trial
+s|.*||g
 #s|\x0d||g
 #s|\x0a||g
-#s||\#EXTM3U\x0d\x0a\#EXT-X-TARGETDURATION:1\x0d\x0a\#EXT-X-VERSION:2\x0d\x0a\#EXT-X-ENDLIST|
+s||\#EXTM3U\x0d\x0a\#EXT-X-TARGETDURATION:5\x0d\x0a\#EXT-X-VERSION:2\x0d\x0a\#EXTINF:1,\x0d\x0a\http://berrybirddisk.appspot.com/112001-blank.flv\x0d\x0a\#EXT-X-ENDLIST|

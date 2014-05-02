@@ -25,6 +25,10 @@ music.163.com/api/batch
 spark.api.xiami.com/api\?.*method=Songs\.getTrackDetail.*
 spark.api.xiami.com/api\?.*method=Songs.detail.*
 
+{ +filter{mytvhdsuck} +force-text-mode +forward-override{forward .} }
+vdo.mobile.tvb.com/2\.0/mytvhd/cc\.php
+v5.pc.duomi.com/single\-ajaxsingle\-isban.*
+
 { +filter{mytvappsuck} +force-text-mode +forward-override{forward .} }
 vdo.mobile.tvb.com/checkCountryAllow\.php
 
@@ -52,6 +56,7 @@ live.qq.com/json/ipad/cover/.*\.json.*
 iface.iqiyi.com/api/initLogin.*
 iface2.iqiyi.com/php/xyz/iface/\?.*
 iface2.iqiyi.com/php/xyz/entry/\?.*
+iface2.iqiyi.com/php/xyz/entry/nebula\.php\?.*
 mixer.cupid.iqiyi.com/mixer\?.*
 cache.m.iqiyi.com/jp/tmts/.*/\?.*type=.*
 
@@ -59,34 +64,14 @@ cache.m.iqiyi.com/jp/tmts/.*/\?.*type=.*
 api.3g.youku.com/layout/phone3_0/shows/.*
 api.3g.youku.com/layout/ios3_0/play/detail.*
 api.3g.tudou.com/v3_3/album/videos.*
+api.3g.tudou.com/v4/album/videos.*
 api.3g.tudou.com/todou/play/detail/desc.*
 
 { +filter{youkuappsuck} +force-text-mode }
 play.api.3g.tudou.com/v.*
 
-#    Blocked by server 
-#{+redirect{s@^http://play.api.3g.youku.com/common/v3/hasadv/play@http://play.api.3g.youku.com/common/v3/play@}}
-#play.api.3g.youku.com/common/v3/hasadv/play.*
-
-{+redirect{s@^http://ark.letv.com/s\?(.*)ark=\d+(.*)@http://ark.letv.com/s?$1ark=2$2@}}
-ark.letv.com/s\?.*ark=\d+.*
-
-{+redirect{s@^http://api@http://v@}}
-api.youku.com/player/getPlayList/VideoIDS/.*
-
-{ +filter{wildcardcrossdomain} +force-text-mode +forward-override{forward .} }
-.youku.com/crossdomain\.xml.*
-.qiyi.com/crossdomain\.xml.*
-.iqiyi.com/crossdomain\.xml.*
-.letv.com/crossdomain\.xml.*
-.sohu.com/crossdomain\.xml.*
-.ku6.com/crossdomain\.xml.*
-.ku6cdn.com/crossdomain\.xml.*
-
-#{+redirect{s@^http://vv.video.qq.com/getvmind\?(.*)vids=(.*)@^http://vv.video.qq.com/getvmind\?$1vids=@}}
-{+block{Video ads}}
-vv.video.qq.com/getvmind\?.*
-iface.iqiyi.com/api/getNewAdInfo.*
+{ +filter{youkuappad} +force-text-mode }
+pl.youku.com/playlist/m3u8\?keyframe=0&.*
 
 { +filter{iqiyisuck} +force-text-mode +forward-override{forward .} }
 data.video.qiyi.com/v\.(f4v|ts)\?.*
@@ -101,6 +86,30 @@ data.video.qiyi.com/v\.(f4v|ts)\?.*
 { +filter{letvlivesuck} +force-text-mode +forward-override{forward .} }
 api.letv.com/streamblock.*
 
-{ +filter{mytvhdsuck} +force-text-mode +forward-override{forward .} }
-vdo.mobile.tvb.com/2\.0/mytvhd/cc\.php
-v5.pc.duomi.com/single\-ajaxsingle\-isban.*
+{ +add-header{X-Forwarded-For: 120.83.234.56} +forward-override{forward .} }
+epg.api.pptv.com/detail\.api\?.*
+play.api.pptv.com/boxplay\.api\?.*
+
+{ +filter{wildcardcrossdomain} +force-text-mode +forward-override{forward .} }
+.youku.com/crossdomain\.xml.*
+.qiyi.com/crossdomain\.xml.*
+.iqiyi.com/crossdomain\.xml.*
+.letv.com/crossdomain\.xml.*
+.sohu.com/crossdomain\.xml.*
+.ku6.com/crossdomain\.xml.*
+.ku6cdn.com/crossdomain\.xml.*
+
+#    Blocked by server 
+#{+redirect{s@^http://play.api.3g.youku.com/common/v3/hasadv/play@http://play.api.3g.youku.com/common/v3/play@}}
+#play.api.3g.youku.com/common/v3/hasadv/play.*
+
+{+redirect{s@^http://ark.letv.com/s\?(.*)ark=\d+(.*)@http://ark.letv.com/s?$1ark=2$2@}}
+ark.letv.com/s\?.*ark=\d+.*
+
+{+redirect{s@^http://api@http://v@}}
+api.youku.com/player/getPlayList/VideoIDS/.*
+
+#{+redirect{s@^http://vv.video.qq.com/getvmind\?(.*)vids=(.*)@^http://vv.video.qq.com/getvmind\?$1vids=@}}
+{+block{Video ads}}
+vv.video.qq.com/getvmind\?.*
+iface.iqiyi.com/api/getNewAdInfo.*
