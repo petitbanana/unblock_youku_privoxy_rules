@@ -3,6 +3,9 @@
 #https://github.com/karlcheong
 #https://twitter.com/karlcheong
 
+FILTER: removeproxysuck filter my proxy junk
+s|(.*)<div></div><script></script>\x0a<script.*.82:8100/adapter\.js">\x0a</script>\x0a|$1|
+
 FILTER: bdmusicsuck Replace mbox.isForeign = "1"; with mbox.isForeign = "";
 s|isForeign = "1";|isForeign = "";|ig
 
@@ -23,8 +26,14 @@ FILTER: mytvappsuck Replace country=HK, accept=true
 s|"country":"..|"country":"HK|
 s|"accept":false|"accept":true|
 
-FILTER: iqiyisuck Replace location(t) with CT/CNC
+FILTER: iqiyisuck Replace location(t) with CT/CNC & Fix iplocation.geo.iqiyi.com
 s/OVERSEA\|.*\-/CT\|BeiJing-/Ui
+s|"isp_id":\d+|"isp_id":2|
+s|"country_id":\d+|"country_id":145|
+s|"province_id":\d+|"province_id":1|
+s|"city_id":\d+|"city_id":1000|
+s|"location_id":\d+|"location_id": 1001000|
+s|"location_id": \d+|"location_id": 1001000|
 
 FILTER: tudousuck Replace tvcCode=5001 with tvcCode=-1
 s|,tvcCode: '5001'|,tvcCode: '-1'|g
@@ -79,6 +88,7 @@ s|"limit":\s1|"limit": 0|g
 
 FILTER: 163musicappsuck Replace restrictedCopyright":[5002,5003,5001], to [],
 s|"restrictedCopyright":\[.*\],|"restrictedCopyright":[],|
+s|var GCopyrights = \[.*\];|var GCopyrights = [];|U
 
 FILTER: iqiyiappsuck iqiyi app kills ad and allow download
 s|"show_ad":1|"show_ad":0|g
@@ -98,8 +108,8 @@ s|"enableAdMasterSDK\\\\\\":1|"enableAdMasterSDK\\\\\\":0|g
 #s|"duration":[0-9][0-9]|"duration":00|g
 s|"duration":\d+|"duration":0|g
 s|"duration\\":\d+|"duration\\":0|g
-#s|"pause_ad":[0-9][0-9]|"duration":00|g
-s|"pause_ad":\d|"duration":0|g
+#s|"pause_ad":[0-9][0-9]|"pause_ad":00|g
+s|"pause_ad":\d|"pause_ad":0|g
 s|"ad":1|"ad":0|g
 #s|"mp4_ad_to":.|"mp4_ad_to":0|g
 s|"open_p2p":1|"open_p2p":0|g
@@ -112,7 +122,7 @@ s|.*||g
 #s|\x0a||g
 s||<?xml version="1.0" encoding="UTF-8"?>\x0d\x0a<cross-domain-policy>\x0d\x0a <allow-access-from domain="*"/>\x0d\x0a</cross-domain-policy>\x0d\x0a|
 
-FILTER: youkuappad block youku ads trial
+FILTER: youkuappad block youku video ads with dummy video
 s|.*||g
 #s|\x0d||g
 #s|\x0a||g

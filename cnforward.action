@@ -54,8 +54,9 @@ flvs.video.qq.com/getvinfo.*
 bkvv.video.qq.com/getvinfo.*
 rcgi.video.qq.com/report.*
 geo.js.kankan.xunlei.com/.*
-web-play.pptv.com/.*
-web-play.pplive.cn/.*
+#    script filter by privoxy, proxy not needed for letv
+#web-play.pptv.com/.*
+#web-play.pplive.cn/.*
 dyn.ugc.pps.tv/.*
 v.pps.tv/ugc/ajax/aj_html5_url\.php.*
 inner.kandian.com/.*
@@ -136,7 +137,7 @@ music.baidu.com/data/music/links\?.*
 #   script filter by privoxy, proxy not needed for xiamimusic
 #spark.api.xiami.com/api\?.*method=Songs.getTrackDetail.*
 #spark.api.xiami.com/api\?.*method=Songs.detail.*
-iplocation.geo.qiyi.com/cityjson
+#iplocation.geo.qiyi.com/cityjson
 sns.video.qq.com/tunnel/fcgi-bin/tunnel.*
 v5.pc.duomi.com/single-ajaxsingle-isban.*
 openapi.youku.com/.*

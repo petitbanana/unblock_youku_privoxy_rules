@@ -7,7 +7,8 @@
 s.plcloud.music.qq.com/fcgi-bin/p\.fcg.*
 
 { +filter{bdmusicsuck} +force-text-mode }
-play.baidu.com/
+play.baidu.com/$
+play.baidu.com/\?.*
 
 { +filter{kgmusicappsuck} +force-text-mode +forward-override{forward .} }
 mobilefeedback.kugou.com/.*
@@ -20,6 +21,7 @@ serviceinfo.sdk.duomi.com/api/serviceinfo/getserverlist.*
 {+filter{163musicappsuck} +force-text-mode +forward-override{forward .} }
 music.163.com/api/copyright/restrict/\?.*
 music.163.com/api/batch
+music.163.com/$
 
 {+filter{xiamimusicsuck} +force-text-mode +forward-override{forward .} }
 spark.api.xiami.com/api\?.*method=Songs\.getTrackDetail.*
@@ -75,6 +77,7 @@ pl.youku.com/playlist/m3u8\?keyframe=0&.*
 
 { +filter{iqiyisuck} +force-text-mode +forward-override{forward .} }
 data.video.qiyi.com/v\.(f4v|ts)\?.*
+iplocation.geo.qiyi.com/cityjson
 
 { +filter{tudousuck} +force-text-mode +forward-override{forward .} }
 .tudou.com/listplay/.*
@@ -86,9 +89,11 @@ data.video.qiyi.com/v\.(f4v|ts)\?.*
 { +filter{letvlivesuck} +force-text-mode +forward-override{forward .} }
 api.letv.com/streamblock.*
 
-{ +add-header{X-Forwarded-For: 120.83.234.56} +forward-override{forward .} }
+{ +add-header{X-Forwarded-For: 218.107.217.82} +forward-override{forward .} }
 epg.api.pptv.com/detail\.api\?.*
 play.api.pptv.com/boxplay\.api\?.*
+web-play.pptv.com/.*
+web-play.pplive.cn/.*
 
 { +filter{wildcardcrossdomain} +force-text-mode +forward-override{forward .} }
 .youku.com/crossdomain\.xml.*
