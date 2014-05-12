@@ -16,6 +16,15 @@ FILTER: qqmusicsuck Replace MusicJsonCallback({ret:0}) with MusicJsonCallback({r
 s|ret:0|ret:1|g
 s|ret":0|ret":1|g
 
+FILTER: 163musicsuck Replace Copyright codes
+s|var GCopyrights = \[.*\];|var GCopyrights = [];|U
+s|var GRestrictive = true;|var GRestrictive = false;|
+s|var tmp_restrictive = isRestrictive\(x\)|var tmp_restrictive = false|
+s|data-res-copyright="0"|data-res-copyright="1"|g
+s|data-copyright="0"|data-copyright="1"|g
+s|li class="js-dis"|li onmouseover="this.className='z-hvr'" onmouseout="this.className=''"|g
+s|class="(.*) js-dis">|class="$1">|g
+
 FILTER: xiamimusicsuck Replace play_authority":0 with play_authority":1
 s|play_authority":0|play_authority":1|g
 
@@ -88,7 +97,6 @@ s|"limit":\s1|"limit": 0|g
 
 FILTER: 163musicappsuck Replace restrictedCopyright":[5002,5003,5001], to [],
 s|"restrictedCopyright":\[.*\],|"restrictedCopyright":[],|
-s|var GCopyrights = \[.*\];|var GCopyrights = [];|U
 
 FILTER: iqiyiappsuck iqiyi app kills ad and allow download
 s|"show_ad":1|"show_ad":0|g
@@ -109,7 +117,7 @@ s|"enableAdMasterSDK\\\\\\":1|"enableAdMasterSDK\\\\\\":0|g
 s|"duration":\d+|"duration":0|g
 s|"duration\\":\d+|"duration\\":0|g
 #s|"pause_ad":[0-9][0-9]|"pause_ad":00|g
-s|"pause_ad":\d|"pause_ad":0|g
+s|"pause_ad":\d+|"pause_ad":0|g
 s|"ad":1|"ad":0|g
 #s|"mp4_ad_to":.|"mp4_ad_to":0|g
 s|"open_p2p":1|"open_p2p":0|g

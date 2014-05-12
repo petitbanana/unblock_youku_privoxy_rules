@@ -39,6 +39,8 @@ live.tv.sohu.com/live/player.*
 220.181.118.181/.*
 123.126.48.47/.*
 123.126.48.48/.*
+vv.video.qq.com/.*
+vv.video.qq.com/geturl.*
 vv.video.qq.com/getvinfo.*
 vv.video.qq.com/getinfo.*
 tt.video.qq.com/getvinfo.*
