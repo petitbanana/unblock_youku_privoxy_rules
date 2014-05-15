@@ -31,7 +31,9 @@ serviceinfo.sdk.duomi.com/api/serviceinfo/getserverlist.*
 music.163.com/api/copyright/restrict/\?.*
 music.163.com/api/batch
 
-{+filter{xiamimusicsuck} +force-text-mode +forward-override{forward .} }
+#{ +filter{xiamimusicsuck} +force-text-mode +forward-override{forward .} }
+{ +add-header{Client-IP: 218.107.217.82} +forward-override{forward .} }
+spark.api.xiami.com/api\?.*
 spark.api.xiami.com/api\?.*method=Songs\.getTrackDetail.*
 spark.api.xiami.com/api\?.*method=Songs.detail.*
 
@@ -122,3 +124,6 @@ api.youku.com/player/getPlayList/VideoIDS/.*
 {+block{Video ads}}
 vv.video.qq.com/getvmind\?.*
 iface.iqiyi.com/api/getNewAdInfo.*
+
+{ +filter{iqiyicdata} +force-text-mode +forward-override{forward .} }
+cdata.video.qiyi.com:8888/client
