@@ -32,7 +32,7 @@ music.163.com/api/copyright/restrict/\?.*
 music.163.com/api/batch
 
 #{ +filter{xiamimusicsuck} +force-text-mode +forward-override{forward .} }
-{ +add-header{Client-IP: 218.107.217.82} +forward-override{forward .} }
+{ +add-header{Client-IP: 219.158.33.69} +forward-override{forward .} }
 spark.api.xiami.com/api\?.*
 spark.api.xiami.com/api\?.*method=Songs\.getTrackDetail.*
 spark.api.xiami.com/api\?.*method=Songs.detail.*
@@ -99,7 +99,7 @@ iplocation.geo.qiyi.com/cityjson
 { +filter{letvlivesuck} +force-text-mode +forward-override{forward .} }
 api.letv.com/streamblock.*
 
-{ +add-header{X-Forwarded-For: 218.107.217.82} +forward-override{forward .} }
+{ +add-header{X-Forwarded-For: 219.158.33.69} +forward-override{forward .} }
 epg.api.pptv.com/detail\.api\?.*
 play.api.pptv.com/boxplay\.api\?.*
 web-play.pptv.com/.*
