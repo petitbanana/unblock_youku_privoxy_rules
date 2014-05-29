@@ -8,6 +8,8 @@
 ~s.plcloud.music.qq.com
 ~hot.vrs.sohu.com
 ~live.tv.sohu.com
+~pad.tv.sohu.com
+~my.tv.sohu.com
 ~hot.vrs.letv.com
 ~g3.letv.cn
 +tv.sohu.com
@@ -73,6 +75,8 @@
 ~m.letv.com
 ~dynamic.app.m.letv.com
 ~dynamic.meizi.app.m.letv.com
+~dynamic.search.app.m.letv.com
+~dynamic.live.app.m.letv.com
 ~listso.m.areainfo.ppstream.com
 ~epg.api.pptv.com
 ~play.api.pptv.com
@@ -103,14 +107,16 @@
 ~tms.is.ysten.com:8080
 
 ~vdo.mobile.tvb.com
-~ark.letv.com
-~static.app.m.letv.com
-~static.meizi.app.m.letv.com
+~v.aty.sohu.com
+~valf.atm.youku.com
 ~bkmobile.video.qq.com
 ~mobile.video.qq.com
 ~live.qq.com
+~iface.iqiyi.com
 ~mixer.cupid.iqiyi.com
-~p2sdata.video.qiyi.com
+~ark.letv.com
+~static.app.m.letv.com
+~static.meizi.app.m.letv.com
 ~pl.youku.com
 
 ######################################################################

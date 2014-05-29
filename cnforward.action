@@ -25,6 +25,8 @@ www.tudou.com/v/.*
 #s.plcloud.music.qq.com/fcgi-bin/p\.fcg.*
 hot.vrs.sohu.com/.*
 live.tv.sohu.com/live/player.*
+pad.tv.sohu.com/playinfo.*
+my.tv.sohu.com/play/m3u8version\.do.*
 #    script filter by privoxy, proxy not needed for letv
 #hot.vrs.letv.com/.*
 #g3.letv.cn/.*
@@ -45,7 +47,7 @@ vv.video.qq.com/getvinfo.*
 vv.video.qq.com/getinfo.*
 tt.video.qq.com/getvinfo.*
 ice.video.qq.com/getvinfo.*
-tjsa.video.qq.com/gevtinfo.*
+tjsa.video.qq.com/getvinfo.*
 a10.video.qq.com/getvinfo.*
 xyy.video.qq.com/getvinfo.*
 vcq.video.qq.com/getvinfo.*
@@ -56,7 +58,7 @@ flvs.video.qq.com/getvinfo.*
 bkvv.video.qq.com/getvinfo.*
 rcgi.video.qq.com/report.*
 geo.js.kankan.xunlei.com/.*
-#    script filter by privoxy, proxy not needed for letv
+#    script filter by privoxy, proxy not needed for pptv
 #web-play.pptv.com/.*
 #web-play.pplive.cn/.*
 dyn.ugc.pps.tv/.*
@@ -87,7 +89,8 @@ www.yinyuetai.com/main/get-.*
 api.letv.com/mms/out/video/play.*
 api.letv.com/mms/out/common/geturl.*
 api.letv.com/geturl.*
-live.gslb.letv.com/gslb\?.*
+#    script filter by privoxy, proxy not needed for letvlive
+#live.gslb.letv.com/gslb\?.*
 vdn.apps.cntv.cn/api/get.*
 vip.sports.cntv.cn/check\.do.*
 vip.sports.cntv.cn/play\.do.*
@@ -114,8 +117,11 @@ cache.m.iqiyi.com/jp/tmts/.*/\?.*type=.*
 #    script filter by privoxy, proxy not needed for letv
 #api.letv.com/getipgeo
 m.letv.com/api/geturl\?.*
-dynamic.app.m.letv.com/.*/dynamic\.php\?.*playid.*
-dynamic.meizi.app.m.letv.com/.*/dynamic\.php\?.*playid.*
+dynamic.app.m.letv.com/.*/dynamic\.php\?.*ctl=videofile.*
+dynamic.meizi.app.m.letv.com/.*/dynamic\.php\?.*ctl=videofile.*
+dynamic.search.app.m.letv.com/.*/dynamic\.php\?.*ctl=videofile.*
+#    script filter by privoxy, proxy not needed for letvlive
+#dynamic.live.app.m.letv.com/.*/dynamic\.php\?.*act=canplay.*
 listso.m.areainfo.ppstream.com/ip/q\.php.*
 #    script filter by privoxy, proxy not needed for pptv
 #epg.api.pptv.com/detail\.api\?.*

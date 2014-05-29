@@ -57,6 +57,7 @@ s|"tvcCode":"\-2|"tvcCode":"-1|g
 
 FILTER: letvlivesuck Replace playStatus 1 with 0
 s|"playStatus":1|"playStatus":0|g
+s|"canPlay":"0"|"canPlay":"1"|
 
 FILTER: letvappsuck letv app kills ad and allow download
 s|"userCountry":"..|"userCountry":"CN|
@@ -108,6 +109,7 @@ s|_dl":"0|_dl":"1|ig
 s|\x5f\x64\x6c\x53(.)\x01\x30\x53|\x5f\x64\x6c\x53$1\x01\x31\x53|g
 s|\x5f\x64\x6c\x49(.)(.)(.)(.)\x53|\x5f\x64\x6c\x49$1$1$1\x01\x53|g
 s|"ad_str":.*\},"1":|},"1":|g
+#s|timePosition":".*","order|timePosition":"1","order|Ug
 #s|"enableMiaozhenSDK":1|"enableMiaozhenSDK":0|g
 #s|"enableAdMasterSDK":1|"enableAdMasterSDK":0|g
 #s|"enableMiaozhenSDK\\":1|"enableMiaozhenSDK\\":0|g

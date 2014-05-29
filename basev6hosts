@@ -5,6 +5,8 @@
 2001:470:1f04:c8b::2  s.plcloud.music.qq.com
 2001:470:1f04:c8b::2  hot.vrs.sohu.com
 2001:470:1f04:c8b::2  live.tv.sohu.com
+2001:470:1f04:c8b::2  pad.tv.sohu.com
+2001:470:1f04:c8b::2  my.tv.sohu.com
 2001:470:1f04:c8b::2  hot.vrs.letv.com
 2001:470:1f04:c8b::2  data.video.qiyi.com
 2001:470:1f04:c8b::2  vv.video.qq.com
@@ -55,6 +57,8 @@
 2001:470:1f04:c8b::2  m.letv.com
 2001:470:1f04:c8b::2  dynamic.app.m.letv.com
 2001:470:1f04:c8b::2  dynamic.meizi.app.m.letv.com
+2001:470:1f04:c8b::2  dynamic.search.app.m.letv.com
+2001:470:1f04:c8b::2  dynamic.live.app.m.letv.com
 2001:470:1f04:c8b::2  listso.m.areainfo.ppstream.com
 2001:470:1f04:c8b::2  epg.api.pptv.com
 2001:470:1f04:c8b::2  play.api.pptv.com
