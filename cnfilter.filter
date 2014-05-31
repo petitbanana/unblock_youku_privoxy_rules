@@ -75,6 +75,16 @@ s|"ip_limit":1|"ip_limit":0|g
 s|"mobile_limit":1|"mobile_limit":0|g
 s|"fee":.|"fee":0|g
 s|"fee_month":.|"fee_month":0|g
+s|advertise3g":1|advertise3g":0|
+s|openfrontAds":1|openfrontAds":0|
+s|frontAdsTime":"\d+"|frontAdsTime":"0"|
+s|frontAdsovertime":\d+|frontAdsovertime":0|
+s|openlocalAds":1|openlocalAds":0|
+s|startPicAdsTime":"\d+"|startPicAdsTime":"0"|
+s|openstartPicAds":1|openstartPicAds":0|
+s|openstopAds":1|openstopAds":0|
+s|autoUpload":1|autoUpload":0|
+s|frontAdsCids":".*"|frontAdsCids":""|U
 
 FILTER: qqvideoappsuck qqvideo app kills ad and allow download
 s|"c_download":.*0,(.*)"|"c_download": 1,$1"|Ug
@@ -106,9 +116,9 @@ s|"vip7":0|"vip7":1|g
 #s|"download_limit":\d|"download_limit":0|g
 s|_dl":0|_dl":1|ig
 s|_dl":"0|_dl":"1|ig
-s|\x5f\x64\x6c\x53(.)\x01\x30\x53|\x5f\x64\x6c\x53$1\x01\x31\x53|g
-s|\x5f\x64\x6c\x49(.)(.)(.)(.)\x53|\x5f\x64\x6c\x49$1$1$1\x01\x53|g
-s|"ad_str":.*\},"1":|},"1":|g
+#s|\x5f\x64\x6c\x53(.)\x01\x30\x53|\x5f\x64\x6c\x53$1\x01\x31\x53|g
+#s|\x5f\x64\x6c\x49(.)(.)(.)(.)\x53|\x5f\x64\x6c\x49$1$1$1\x01\x53|g
+s|"ad_str":.*\}\\n",||g
 #s|timePosition":".*","order|timePosition":"1","order|Ug
 #s|"enableMiaozhenSDK":1|"enableMiaozhenSDK":0|g
 #s|"enableAdMasterSDK":1|"enableAdMasterSDK":0|g

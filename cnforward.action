@@ -111,8 +111,10 @@ tv.api.3g.tudou.com/tv/play\?.*
 api.3g.tudou.com/.*
 api.tv.sohu.com/mobile_user/device/clientconf\.json\?.*
 access.tv.sohu.com/.*
+iface.iqiyi.com/api/searchIface\?.*
 iface2.iqiyi.com/php/xyz/iface/.*
 iface2.iqiyi.com/php/xyz/entry/galaxy\.php\?.*
+iface2.iqiyi.com/php/xyz/entry/nebula\.php\?.*
 cache.m.iqiyi.com/jp/tmts/.*/\?.*type=.*
 #    script filter by privoxy, proxy not needed for letv
 #api.letv.com/getipgeo
