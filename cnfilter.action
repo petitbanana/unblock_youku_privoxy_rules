@@ -40,6 +40,7 @@ spark.api.xiami.com/api\?.*method=Songs.detail.*
 { +filter{mytvhdsuck} +force-text-mode +forward-override{forward .} }
 vdo.mobile.tvb.com/2\.0/mytvhd/cc\.php
 v5.pc.duomi.com/single\-ajaxsingle\-isban.*
+chrome.2345.com/dianhua/index\.php\?m=call&f=check.*
 
 { +filter{mytvappsuck} +force-text-mode +forward-override{forward .} }
 vdo.mobile.tvb.com/checkCountryAllow\.php
@@ -117,6 +118,9 @@ live.gslb.letv.com/gslb\?.*
 .ku6.com/crossdomain\.xml.*
 .ku6cdn.com/crossdomain\.xml.*
 
+{ +filter{iqiyicdata} +force-text-mode +forward-override{forward .} }
+cdata.video.qiyi.com:8888/client
+
 {+redirect{s@^http://ark.letv.com/s\?(.*)ark=\d+(.*)@http://ark.letv.com/s?$1ark=2$2@}}
 ark.letv.com/s\?.*ark=\d+.*
 
@@ -133,6 +137,8 @@ api.youku.com/player/getPlayList/VideoIDS/.*
 {+block{Video ads}}
 vv.video.qq.com/getvmind\?.*
 iface.iqiyi.com/api/getNewAdInfo.*
+tuner.pandora.com/services/json/\?method=ad\..*
+www.pandora.com/radio/services/brokenAd\.jsp
 
 {+crunch-client-header{User-Agent:} +add-header{User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D201 Safari/9537.53}}
 
