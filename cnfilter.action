@@ -74,6 +74,9 @@ iface2.iqiyi.com/php/xyz/entry/nebula\.php\?.*
 mixer.cupid.iqiyi.com/mixer\?.*
 cache.m.iqiyi.com/jp/tmts/.*/\?.*type=.*
 
+{ +filter{iqiyicdata} +force-text-mode +forward-override{forward .} }
+cdata.video.qiyi.com:8888/client
+
 { +filter{youkuappsuck} +force-text-mode +forward-override{forward .} }
 api.3g.youku.com/layout/phone3_0/shows/.*
 api.3g.youku.com/layout/ios3_0/play/detail.*
@@ -118,8 +121,11 @@ live.gslb.letv.com/gslb\?.*
 .ku6.com/crossdomain\.xml.*
 .ku6cdn.com/crossdomain\.xml.*
 
-{ +filter{iqiyicdata} +force-text-mode +forward-override{forward .} }
-cdata.video.qiyi.com:8888/client
+{ +filter{kankansuck} +force-text-mode +forward-override{forward .} }
+geo.js.kankan.xunlei.com/.*
+
+{ +filter{cntvsuck} +force-text-mode +forward-override{forward .} }
+vdn.apps.cntv.cn/api/getHttpVideoInfo\.do\?.*
 
 {+redirect{s@^http://ark.letv.com/s\?(.*)ark=\d+(.*)@http://ark.letv.com/s?$1ark=2$2@}}
 ark.letv.com/s\?.*ark=\d+.*

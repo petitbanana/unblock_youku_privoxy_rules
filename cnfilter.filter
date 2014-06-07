@@ -114,9 +114,27 @@ s|"ad_str":.*\}\\n",||g
 #s|"open_p2p":1|"open_p2p":0|g
 #s|"open_p2p_down":1|"open_p2p_down":0|g
 
+FILTER: iqiyicdata modify cdata p2p tracker
+s|group_num=\d+|group_num=5|
+s|url_num=\d+|url_num=3|
+s|level_num=\d+|level_num=3|
+s|outside_address=.*|outside_address=121\.199\.24\.174|
+s|operator=\d+|operator=104|
+s|\x0a\[tracker2\]||
+s|\x0a\[tracker3\]||
+s|\x0atracker_info.*:CNC:.*||g
+s|\x0atracker_info.*:CT:.*||g
+s|\[stun\]|tracker_info41=119\.188\.110\.85:8989:1:CRTC:North\x0atracker_info45=119\.97\.157\.190:8989:2:CRTC:North\x0atracker_info48=119\.97\.157\.164:8989:3:CRTC:North\x0atracker_info49=119\.97\.145\.16:8989:4:CRTC:North\x0atracker_info51=119\.97\.145\.16:8989:5:CRTC:North\x0a\[stun\]|
+
 FILTER: youkuappsuck Replace "limit":1 with "limit":0
 s|"limit":1|"limit":0|g
 s|"limit":\s1|"limit": 0|g
+
+FILTER: youkuappad block youku video ads with dummy video
+s|.*||g
+#s|\x0d||g
+#s|\x0a||g
+s||\#EXTM3U\x0d\x0a\#EXT-X-TARGETDURATION:5\x0d\x0a\#EXT-X-VERSION:2\x0d\x0a\#EXTINF:1,\x0d\x0a\http://berrybirddisk.appspot.com/112001-blank.flv\x0d\x0a\#EXT-X-ENDLIST|
 
 FILTER: letvlivesuck Replace playStatus 1 with 0
 s|"playStatus":1|"playStatus":0|g
@@ -142,23 +160,9 @@ s|"tvcCode":"5001|"tvcCode":"-1|g
 s|"tvcCode":"1001|"tvcCode":"-1|g
 s|"tvcCode":"\-2|"tvcCode":"-1|g
 
-FILTER: youkuappad block youku video ads with dummy video
-s|.*||g
-#s|\x0d||g
-#s|\x0a||g
-s||\#EXTM3U\x0d\x0a\#EXT-X-TARGETDURATION:5\x0d\x0a\#EXT-X-VERSION:2\x0d\x0a\#EXTINF:1,\x0d\x0a\http://berrybirddisk.appspot.com/112001-blank.flv\x0d\x0a\#EXT-X-ENDLIST|
-
-FILTER: iqiyicdata modify cdata p2p tracker
-s|group_num=\d+|group_num=5|
-s|url_num=\d+|url_num=3|
-s|level_num=\d+|level_num=3|
-s|outside_address=.*|outside_address=121\.199\.24\.174|
-s|operator=\d+|operator=104|
-s|\x0a\[tracker2\]||
-s|\x0a\[tracker3\]||
-s|\x0atracker_info.*:CNC:.*||g
-s|\x0atracker_info.*:CT:.*||g
-s|\[stun\]|tracker_info41=119\.188\.110\.85:8989:1:CRTC:North\x0atracker_info45=119\.97\.157\.190:8989:2:CRTC:North\x0atracker_info48=119\.97\.157\.164:8989:3:CRTC:North\x0atracker_info49=119\.97\.145\.16:8989:4:CRTC:North\x0atracker_info51=119\.97\.145\.16:8989:5:CRTC:North\x0a\[stun\]|
-
-FILTER: kkarea change kkarea to 1
+FILTER: kankansuck change kkarea to 1
 s|var kkarea = .*;|var kkarea = 1;|
+
+FILTER: cntvsuck change is_invalid_copyright, is_protected to 0 
+s|is_invalid_copyright":"1"|is_invalid_copyright":"0"|
+s|is_protected":"1"|is_protected":"0"|
