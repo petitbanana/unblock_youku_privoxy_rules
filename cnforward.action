@@ -179,6 +179,8 @@ openapi.youku.com/.*
 220.181.154.137/.*
 httpbin.org/get
 tms.is.ysten.com:8080/yst-tms/login\.action\?.*
+chrome.2345.com/dianhua/mobileApi/check\.php
+
 180.153.225.136/.*
 118.244.244.124/.*
 210.129.145.150/.*
