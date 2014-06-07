@@ -51,7 +51,7 @@ hot.vrs.letv.com/.*
 static.app.m.letv.com/android/mod/mob/ctl/.*/act/detail/id/.*
 static.meizi.app.m.letv.com/android/mod/mob/ctl/.*/act/detail/id/.*
 
-{ +filter{sohuappsuck} +force-text-mode }
+{ +filter{sohuappsuck} +force-text-mode +forward-override{forward .} }
 api.tv.sohu.com/mobile_user/device/clientconf\.json\?.*
 api.tv.sohu.com/mobile/control/switch\.json\?.*
 api.tv.sohu.com/mobile/video/list\.json.*
