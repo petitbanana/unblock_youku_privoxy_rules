@@ -3,6 +3,18 @@
 #https://github.com/karlcheong
 #https://twitter.com/karlcheong
 
+{ +filter{wildcardcrossdomain} +force-text-mode +forward-override{forward .} }
+.youku.com/crossdomain\.xml.*
+.qiyi.com/crossdomain\.xml.*
+.iqiyi.com/crossdomain\.xml.*
+.letv.com/crossdomain\.xml.*
+.sohu.com/crossdomain\.xml.*
+.ku6.com/crossdomain\.xml.*
+.ku6cdn.com/crossdomain\.xml.*
+
+{ +filter{2345dianhua} +force-text-mode +forward-override{forward .} }
+chrome.2345.com/dianhua/$
+
 { +filter{qqmusicsuck} +force-text-mode +forward-override{forward .} }
 s.plcloud.music.qq.com/fcgi-bin/p\.fcg.*
 
@@ -111,15 +123,6 @@ play.api.pptv.com/boxplay\.api\?.*
 web-play.pptv.com/.*
 web-play.pplive.cn/.*
 live.gslb.letv.com/gslb\?.*
-
-{ +filter{wildcardcrossdomain} +force-text-mode +forward-override{forward .} }
-.youku.com/crossdomain\.xml.*
-.qiyi.com/crossdomain\.xml.*
-.iqiyi.com/crossdomain\.xml.*
-.letv.com/crossdomain\.xml.*
-.sohu.com/crossdomain\.xml.*
-.ku6.com/crossdomain\.xml.*
-.ku6cdn.com/crossdomain\.xml.*
 
 { +filter{kankansuck} +force-text-mode +forward-override{forward .} }
 geo.js.kankan.xunlei.com/.*

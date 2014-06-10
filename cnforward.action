@@ -125,7 +125,7 @@ iface.iqiyi.com/api/searchIface\?.*
 iface2.iqiyi.com/php/xyz/iface/.*
 iface2.iqiyi.com/php/xyz/entry/galaxy\.php\?.*
 iface2.iqiyi.com/php/xyz/entry/nebula\.php\?.*
-cache.m.iqiyi.com/jp/tmts/.*/\?.*type=.*
+cache.m.iqiyi.com/jp/tmts/.*
 #    script filter by privoxy, proxy not needed for letv
 #api.letv.com/getipgeo
 m.letv.com/api/geturl\?.*
@@ -146,7 +146,6 @@ vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv5.*
 vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv6.*
 vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv8.*
 vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdbtv6.*
-
 3g.music.qq.com/.*
 mqqplayer.3g.qq.com/.*
 proxy.music.qq.com/.*
@@ -180,7 +179,6 @@ openapi.youku.com/.*
 httpbin.org/get
 tms.is.ysten.com:8080/yst-tms/login\.action\?.*
 chrome.2345.com/dianhua/mobileApi/check\.php
-
 180.153.225.136/.*
 118.244.244.124/.*
 210.129.145.150/.*

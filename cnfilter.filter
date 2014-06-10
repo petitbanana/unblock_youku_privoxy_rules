@@ -12,6 +12,9 @@ s||<?xml version="1.0" encoding="UTF-8"?>\x0d\x0a<cross-domain-policy>\x0d\x0a <
 FILTER: removeproxysuck filter my proxy junk
 s|(.*)<div></div><script></script>\x0a<script.*.82:8100/adapter\.js">\x0a</script>\x0a|$1|
 
+FILTER: 2345dianhua remove 2345dianhua browser detection
+s|<script type="text/javascript" >\x0d\x0awindow\.onload = function\(\)\{\x0d\x0a\x09.*css\('z-index',20\);\x0d\x0a\};\x0d\x0a</script>||
+
 FILTER: qqmusicsuck Replace MusicJsonCallback({ret:0}) with MusicJsonCallback({ret:1})
 s|ret:0|ret:1|g
 s|ret":0|ret":1|g
