@@ -52,10 +52,12 @@ spark.api.xiami.com/api\?.*method=Songs.detail.*
 { +filter{mytvhdsuck} +force-text-mode +forward-override{forward .} }
 vdo.mobile.tvb.com/2\.0/mytvhd/cc\.php
 v5.pc.duomi.com/single\-ajaxsingle\-isban.*
-chrome.2345.com/dianhua/index\.php\?m=call&f=check.*
+chrome.2345.com/dianhua/index\.php\?m=call&f=check&.*
 
 { +filter{mytvappsuck} +force-text-mode +forward-override{forward .} }
 vdo.mobile.tvb.com/checkCountryAllow\.php
+#api.ads.tvb.com/adtree/video\.php\?.*
+#api.ads.tvb.com/adtree/overlay\.php\?.*
 
 { +filter{letvappsuck} +force-text-mode +forward-override{forward .} }
 api.letv.com/getipgeo
@@ -101,6 +103,12 @@ play.api.3g.tudou.com/v.*
 
 { +filter{youkuappad} +force-text-mode }
 pl.youku.com/playlist/m3u8\?keyframe=0&.*
+
+#{ +filter{cntvgeoservice} +force-text-mode +forward-override{forward .} }
+#gridsum-vd.cntv.cn/geoservice/g\.aspx.*
+
+{ +filter{cntvipplayer} +force-text-mode +forward-override{forward .} }
+ip.apps.cntv.cn/js/player\.do.*
 
 { +filter{iqiyisuck} +force-text-mode +forward-override{forward .} }
 data.video.qiyi.com/v\.(f4v|ts)\?.*

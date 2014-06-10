@@ -3,14 +3,14 @@
 #https://github.com/karlcheong
 #https://twitter.com/karlcheong
 
+FILTER: removeproxysuck filter my proxy junk
+s|(.*)<div></div><script></script>\x0a<script.*.82:8100/adapter\.js">\x0a</script>\x0a|$1|
+
 FILTER: wildcardcrossdomain change the crossdomain xml to wildcard
 s|.*||g
 #s|\x0d||g
 #s|\x0a||g
 s||<?xml version="1.0" encoding="UTF-8"?>\x0d\x0a<cross-domain-policy>\x0d\x0a <allow-access-from domain="*"/>\x0d\x0a</cross-domain-policy>\x0d\x0a|
-
-FILTER: removeproxysuck filter my proxy junk
-s|(.*)<div></div><script></script>\x0a<script.*.82:8100/adapter\.js">\x0a</script>\x0a|$1|
 
 FILTER: 2345dianhua remove 2345dianhua browser detection
 s|<script type="text/javascript" >\x0d\x0awindow\.onload = function\(\)\{\x0d\x0a\x09.*css\('z-index',20\);\x0d\x0a\};\x0d\x0a</script>||
@@ -49,6 +49,15 @@ s|.*|1|
 FILTER: mytvappsuck Replace country=HK, accept=true
 s|"country":"..|"country":"HK|
 s|"accept":false|"accept":true|
+s|"preroll":1|"preroll":0|
+s|"midroll1":1|"midroll1":0|
+s|"midroll2":1|"midroll2":0|
+s|"midroll3":1|"midroll3":0|
+s|"live":1|"live":0|
+s|"general":1|"general":0|
+s|"start" : \d+,|"start" : 65535,|
+s|"duration" : \d+,|"duration" : 1,|
+s|"interval" : \d+|"interval" : 65535|
 
 FILTER: letvappsuck letv app kills ad and allow download
 s|"userCountry":"..|"userCountry":"CN|
@@ -138,6 +147,13 @@ s|.*||g
 #s|\x0d||g
 #s|\x0a||g
 s||\#EXTM3U\x0d\x0a\#EXT-X-TARGETDURATION:5\x0d\x0a\#EXT-X-VERSION:2\x0d\x0a\#EXTINF:1,\x0d\x0a\http://berrybirddisk.appspot.com/112001-blank.flv\x0d\x0a\#EXT-X-ENDLIST|
+
+FILTER: cntvgeoservice change to CN geoservice setting
+s|.*||g
+s||49-53-54-51-53-48-48-48-48|
+
+FILTER: cntvipplayer change to CN player setting
+s/="..\|.*/="CN|GD|SZ|0"/
 
 FILTER: letvlivesuck Replace playStatus 1 with 0
 s|"playStatus":1|"playStatus":0|g

@@ -97,6 +97,7 @@ api.letv.com/mms/out/common/geturl.*
 api.letv.com/geturl.*
 #    script filter by privoxy, proxy not needed for letvlive
 #live.gslb.letv.com/gslb\?.*
+#ip.apps.cntv.cn/js/player\.do.*
 #vdn.apps.cntv.cn/api/get.*
 vdn.live.cntv.cn/api2/liveHtml5\.do\?channel=pa://cctv_p2p_hdcctv5.*
 vdn.live.cntv.cn/api2/liveHtml5\.do\?channel=pa://cctv_p2p_hdcctv6.*
