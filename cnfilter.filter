@@ -64,6 +64,7 @@ s|"userCountry":"..|"userCountry":"CN|
 s|"allowplay":"0|"allowplay":"1|
 s|"ip":"0|"ip":"1|
 s|"download":"0"|"download":"1"|g
+s|"download":0|"download":1|g
 s|"pay":"1"|"pay":"0"|g
 
 FILTER: sohuappsuck sohuvideo app kills ad and allow download
@@ -150,10 +151,10 @@ s||\#EXTM3U\x0d\x0a\#EXT-X-TARGETDURATION:5\x0d\x0a\#EXT-X-VERSION:2\x0d\x0a\#EX
 
 FILTER: cntvgeoservice change to CN geoservice setting
 s|.*||g
-s||49-53-54-51-53-48-48-48-48|
+s||49-53-54-49-49-48-48-48-48|
 
 FILTER: cntvipplayer change to CN player setting
-s/="..\|.*/="CN|GD|SZ|0"/
+s/="..\|.*/="CN|BJ|NULL|0"/
 
 FILTER: letvlivesuck Replace playStatus 1 with 0
 s|"playStatus":1|"playStatus":0|g
@@ -182,6 +183,6 @@ s|"tvcCode":"\-2|"tvcCode":"-1|g
 FILTER: kankansuck change kkarea to 1
 s|var kkarea = .*;|var kkarea = 1;|
 
-FILTER: cntvsuck change is_invalid_copyright, is_protected to 0 
+FILTER: cntvvideosuck change is_invalid_copyright, is_protected to 0 
 s|is_invalid_copyright":"1"|is_invalid_copyright":"0"|
 s|is_protected":"1"|is_protected":"0"|

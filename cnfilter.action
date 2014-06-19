@@ -104,14 +104,15 @@ play.api.3g.tudou.com/v.*
 { +filter{youkuappad} +force-text-mode }
 pl.youku.com/playlist/m3u8\?keyframe=0&.*
 
-#{ +filter{cntvgeoservice} +force-text-mode +forward-override{forward .} }
-#gridsum-vd.cntv.cn/geoservice/g\.aspx.*
+{ +filter{cntvgeoservice} +force-text-mode +forward-override{forward .} }
+gridsum-vd.cntv.cn/geoservice/g\.aspx.*
 
 { +filter{cntvipplayer} +force-text-mode +forward-override{forward .} }
 ip.apps.cntv.cn/js/player\.do.*
 
 { +filter{iqiyisuck} +force-text-mode +forward-override{forward .} }
 data.video.qiyi.com/v\.(f4v|ts)\?.*
+cache.vip.qiyi.com/vms\?.*
 iplocation.geo.qiyi.com/cityjson
 
 { +filter{tudousuck} +force-text-mode +forward-override{forward .} }
@@ -135,7 +136,7 @@ live.gslb.letv.com/gslb\?.*
 { +filter{kankansuck} +force-text-mode +forward-override{forward .} }
 geo.js.kankan.xunlei.com/.*
 
-{ +filter{cntvsuck} +force-text-mode +forward-override{forward .} }
+{ +filter{cntvvideosuck} +force-text-mode +forward-override{forward .} }
 vdn.apps.cntv.cn/api/getHttpVideoInfo\.do\?.*
 
 {+redirect{s@^http://ark.letv.com/s\?(.*)ark=\d+(.*)@http://ark.letv.com/s?$1ark=2$2@}}
@@ -147,10 +148,19 @@ v.aty.sohu.com/v\?.*fee=0.*
 {+redirect{s@^http://valf.atm.youku.com/vf\?(.*)paid=0(.*)@http://valf.atm.youku.com/vf\?$1paid=1$2@}}
 valf.atm.youku.com/vf\?.*paid=0.*
 
+{+redirect{s@cctv_p2p_hd(cc|b)tv(\d).*@cctv_p2p_hd$1tv$2@}}
+vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdcctv5.*
+vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdcctv6.*
+vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdcctv8.*
+vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdbtv6.*
+vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv5.*
+vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv6.*
+vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv8.*
+vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdbtv6.*
+
 {+redirect{s@^http://api@http://v@}}
 api.youku.com/player/getPlayList/VideoIDS/.*
 
-#{+redirect{s@^http://vv.video.qq.com/getvmind\?(.*)vids=(.*)@^http://vv.video.qq.com/getvmind\?$1vids=@}}
 {+block{Video ads}}
 vv.video.qq.com/getvmind\?.*
 iface.iqiyi.com/api/getNewAdInfo.*

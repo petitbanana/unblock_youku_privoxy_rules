@@ -30,8 +30,9 @@ my.tv.sohu.com/play/m3u8version\.do.*
 #    script filter by privoxy, proxy not needed for letv
 #hot.vrs.letv.com/.*
 #g3.letv.cn/.*
-#    script filter by privoxy, 
+#    script filter by privoxy, proxy not needed for qiyi
 #data.video.qiyi.com/.*
+#cache.vip.qiyi.com/vms\?.*
 #    sohu video server, seem not needed atm
 61.135.183.45/.*
 61.135.183.46/.*
@@ -143,10 +144,15 @@ vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdcctv5.*
 vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdcctv6.*
 vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdcctv8.*
 vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdbtv6.*
+vdn.live.cntv.cn/api2/liveTimeshift\.do\?.*&channel=pa://cctv_p2p_hdcctv5&.*
+vdn.live.cntv.cn/api2/liveTimeshift\.do\?.*&channel=pa://cctv_p2p_hdcctv6&.*
+vdn.live.cntv.cn/api2/liveTimeshift\.do\?.*&channel=pa://cctv_p2p_hdcctv8&.*
+vdn.live.cntv.cn/api2/liveTimeshift\.do\?.*&channel=pa://cctv_p2p_hdbtv6&.*
 vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv5.*
 vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv6.*
 vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv8.*
 vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdbtv6.*
+
 3g.music.qq.com/.*
 mqqplayer.3g.qq.com/.*
 proxy.music.qq.com/.*

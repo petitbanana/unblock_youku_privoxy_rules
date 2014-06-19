@@ -17,6 +17,7 @@
 ~/\?prot=2&type=1.*
 ~/\?prot=2&file=.*
 ~data.video.qiyi.com
+~cache.vip.qiyi.com
 ~61.135.183.45
 ~61.135.183.46
 ~61.135.183.50
@@ -64,6 +65,7 @@
 ~.dpool.sina.com.cn
 ~api.letv.com
 ~live.gslb.letv.com
+~gridsum-vd.cntv.cn
 ~ip.apps.cntv.cn
 ~vdn.live.cntv.cn
 ~vdn.apps.cntv.cn
