@@ -33,20 +33,21 @@ my.tv.sohu.com/play/m3u8version\.do.*
 #    script filter by privoxy, proxy not needed for qiyi
 #data.video.qiyi.com/.*
 #cache.vip.qiyi.com/vms\?.*
+#cache.video.qiyi.com/vms\?.*
 #    sohu video server, seem not needed atm
-61.135.183.45/.*
-61.135.183.46/.*
-61.135.183.50/.*
-220.181.61.229/.*
-220.181.61.212/.*
-220.181.61.213/.*
-220.181.19.218/.*
-220.181.118.181/.*
-123.126.48.47/.*
-123.126.48.48/.*
-123.125.123.80/.*
-123.125.123.81/.*
-123.125.123.82/.*
+#61.135.183.45/.*
+#61.135.183.46/.*
+#61.135.183.50/.*
+#220.181.61.229/.*
+#220.181.61.212/.*
+#220.181.61.213/.*
+#220.181.19.218/.*
+#220.181.118.181/.*
+#123.126.48.47/.*
+#123.126.48.48/.*
+#123.125.123.80/.*
+#123.125.123.81/.*
+#123.125.123.82/.*
 vv.video.qq.com/.*
 vv.video.qq.com/geturl.*
 vv.video.qq.com/getvinfo.*
@@ -62,7 +63,6 @@ vbj.video.qq.com/getvinfo.*
 bobo.video.qq.com/getvinfo.*
 flvs.video.qq.com/getvinfo.*
 bkvv.video.qq.com/getvinfo.*
-rcgi.video.qq.com/report.*
 #    script filter by privoxy, proxy not needed for kankan
 #geo.js.kankan.xunlei.com/.*
 #    script filter by privoxy, proxy not needed for pptv
@@ -107,6 +107,7 @@ vdn.live.cntv.cn/api2/liveHtml5\.do\?channel=pa://cctv_p2p_hdbtv6.*
 vip.sports.cntv.cn/check\.do.*
 vip.sports.cntv.cn/play\.do.*
 vip.sports.cntv.cn/servlets/encryptvideopath\.do.*
+
 api.3g.youku.com/layout.*
 api.3g.youku.com/v3/play/address.*
 api.3g.youku.com/openapi-wireless/videos/.*/download.*

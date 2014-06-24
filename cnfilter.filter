@@ -169,15 +169,12 @@ s|"city_id":\d+|"city_id":1000|
 s|"location_id":\d+|"location_id": 1001000|
 s|"location_id": \d+|"location_id": 1001000|
 
-FILTER: tudousuck Replace tvcCode=5001 with tvcCode=-1
-s|,tvcCode: '5001'|,tvcCode: '-1'|g
-s|,tvcCode: '1001'|,tvcCode: '-1'|g
+FILTER: tudousuck Replace tvcCode=? with tvcCode=-1
+s|,tvcCode: '\d+'|,tvcCode: '-1'|g
 s|,tvcCode: '\-2'|,tvcCode: '-1'|g
-s|"message":"5001",|"message":"-1",|g
-s|"message":"1001",|"message":"-1",|g
+s|"message":"\d+",|"message":"-1",|g
 s|"message":"\-2",|"message":"-1",|g
-s|"tvcCode":"5001|"tvcCode":"-1|g
-s|"tvcCode":"1001|"tvcCode":"-1|g
+s|"tvcCode":"\d+|"tvcCode":"-1|g
 s|"tvcCode":"\-2|"tvcCode":"-1|g
 
 FILTER: kankansuck change kkarea to 1

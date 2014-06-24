@@ -18,6 +18,7 @@
 ~/\?prot=2&file=.*
 ~data.video.qiyi.com
 ~cache.vip.qiyi.com
+~cache.video.qiyi.com
 ~61.135.183.45
 ~61.135.183.46
 ~61.135.183.50
@@ -43,7 +44,6 @@
 ~bobo.video.qq.com
 ~flvs.video.qq.com
 ~bkvv.video.qq.com
-~rcgi.video.qq.com
 ~geo.js.kankan.xunlei.com
 ~web-play.pptv.com
 ~web-play.pplive.cn

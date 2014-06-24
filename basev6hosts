@@ -10,6 +10,7 @@
 2001:470:1f04:c8b::2  hot.vrs.letv.com
 2001:470:1f04:c8b::2  data.video.qiyi.com
 2001:470:1f04:c8b::2  cache.vip.qiyi.com
+2001:470:1f04:c8b::2  cache.video.qiyi.com
 2001:470:1f04:c8b::2  vv.video.qq.com
 2001:470:1f04:c8b::2  tt.video.qq.com
 2001:470:1f04:c8b::2  ice.video.qq.com
@@ -22,7 +23,6 @@
 2001:470:1f04:c8b::2  bobo.video.qq.com
 2001:470:1f04:c8b::2  flvs.video.qq.com
 2001:470:1f04:c8b::2  bkvv.video.qq.com
-2001:470:1f04:c8b::2  rcgi.video.qq.com
 2001:470:1f04:c8b::2  geo.js.kankan.xunlei.com
 2001:470:1f04:c8b::2  web-play.pptv.com
 2001:470:1f04:c8b::2  web-play.pplive.cn
@@ -61,8 +61,8 @@
 2001:470:1f04:c8b::2  m.letv.com
 2001:470:1f04:c8b::2  dynamic.app.m.letv.com
 2001:470:1f04:c8b::2  dynamic.meizi.app.m.letv.com
-2001:470:1f04:c8b::2  dynamic.live.app.m.letv.com
 2001:470:1f04:c8b::2  dynamic.search.app.m.letv.com
+2001:470:1f04:c8b::2  dynamic.live.app.m.letv.com
 2001:470:1f04:c8b::2  listso.m.areainfo.ppstream.com
 2001:470:1f04:c8b::2  epg.api.pptv.com
 2001:470:1f04:c8b::2  play.api.pptv.com
