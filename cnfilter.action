@@ -48,9 +48,12 @@ music.163.com/api/batch
 #{ +filter{xiamimusicsuck} +force-text-mode +forward-override{forward .} }
 { +add-header{Client-IP: 219.158.33.69} +forward-override{forward .} }
 spark.api.xiami.com/api\?.*
+spark.api.xiami.com/api\?.*method=AuthIp.*
 spark.api.xiami.com/api\?.*method=Songs\.getTrackDetail.*
-spark.api.xiami.com/api\?.*method=Songs.detail.*
-www.xiami.com/web/.*
+spark.api.xiami.com/api\?.*method=Songs\.detail.*
+www.xiami.com/.*
+www.xiami.com/web/spark.*
+www.xiami.com/web/.*\?.*xiamitoken=.*
 
 { +filter{mytvhdsuck} +force-text-mode +forward-override{forward .} }
 vdo.mobile.tvb.com/2\.0/mytvhd/cc\.php

@@ -171,8 +171,11 @@ music.baidu.com/data/music/links\?.*
 #   script filter by privoxy, proxy not needed for 163music
 #music.163.com/api/copyright/restrict/\?.*
 #   script filter by privoxy, proxy not needed for xiamimusic
-#spark.api.xiami.com/api\?.*method=Songs.getTrackDetail.*
-#spark.api.xiami.com/api\?.*method=Songs.detail.*
+#spark.api.xiami.com/api\?.*method=AuthIp.*
+#spark.api.xiami.com/api\?.*method=Songs\.getTrackDetail.*
+#spark.api.xiami.com/api\?.*method=Songs\.detail.*
+#www.xiami.com/web/.*
+#www.xiami.com/web/.*\?.*xiamitoken=.*
 #iplocation.geo.qiyi.com/cityjson
 sns.video.qq.com/tunnel/fcgi-bin/tunnel.*
 v5.pc.duomi.com/single-ajaxsingle-isban.*
