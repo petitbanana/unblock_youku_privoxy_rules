@@ -97,7 +97,7 @@ cache.m.iqiyi.com/jp/tmts/.*
 { +filter{iqiyicdata} +force-text-mode +forward-override{forward .} }
 cdata.video.qiyi.com:8888/client
 
-{ +filter{youkuappsuck} +force-text-mode +forward-override{forward .} }
+{ +filter{youkuappsuck} +force-text-mode }
 api.3g.youku.com/layout/phone3_0/shows/.*
 api.3g.youku.com/layout/ios3_0/play/detail.*
 api.3g.tudou.com/v3_3/album/videos.*
