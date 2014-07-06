@@ -48,6 +48,7 @@
 2001:470:1f04:c8b::2  vdn.live.cntv.cn
 2001:470:1f04:c8b::2  vdn.apps.cntv.cn
 2001:470:1f04:c8b::2  vip.sports.cntv.cn
+2001:470:1f04:c8b::2  a.play.api.3g.youku.com
 2001:470:1f04:c8b::2  api.3g.youku.com
 2001:470:1f04:c8b::2  tv.api.3g.youku.com
 2001:470:1f04:c8b::2  play.api.3g.youku.com
@@ -84,5 +85,6 @@
 2001:470:1f04:c8b::2  sns.video.qq.com
 2001:470:1f04:c8b::2  v5.pc.duomi.com
 2001:470:1f04:c8b::2  tms.is.ysten.com
+2001:470:1f04:c8b::2  internal.check.duokanbox.com
 
 2001:470:1f04:c8b::2  vdo.mobile.tvb.com

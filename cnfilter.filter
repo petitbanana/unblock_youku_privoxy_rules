@@ -149,13 +149,6 @@ s|.*||g
 #s|\x0a||g
 s||\#EXTM3U\x0d\x0a\#EXT-X-TARGETDURATION:5\x0d\x0a\#EXT-X-VERSION:2\x0d\x0a\#EXTINF:1,\x0d\x0a\http://berrybirddisk.appspot.com/112001-blank.flv\x0d\x0a\#EXT-X-ENDLIST|
 
-FILTER: cntvgeoservice change to CN geoservice setting
-s|.*||g
-s||49-53-54-49-49-48-48-48-48|
-
-FILTER: cntvipplayer change to CN player setting
-s/="..\|.*/="CN|BJ|NULL|0"/
-
 FILTER: letvlivesuck Replace playStatus 1 with 0
 s|"playStatus":1|"playStatus":0|g
 s|"canPlay":"0"|"canPlay":"1"|
@@ -180,6 +173,16 @@ s|"tvcCode":"\-2|"tvcCode":"-1|g
 FILTER: kankansuck change kkarea to 1
 s|var kkarea = .*;|var kkarea = 1;|
 
+FILTER: cntvgeoservice change to CN geoservice setting
+s|.*||g
+s||49-53-54-49-49-48-48-48-48|
+
+FILTER: cntvipplayer change to CN player setting
+s/="..\|.*/="CN|BJ|NULL|0"/
+
 FILTER: cntvvideosuck change is_invalid_copyright, is_protected to 0 
 s|is_invalid_copyright":"1"|is_invalid_copyright":"0"|
 s|is_protected":"1"|is_protected":"0"|
+
+FILTER: duokanboxsuck change internal":"0 to 1
+s|"internal":"0"|"internal":"1"|

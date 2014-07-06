@@ -103,6 +103,8 @@ api.3g.youku.com/layout/ios3_0/play/detail.*
 api.3g.tudou.com/v3_3/album/videos.*
 api.3g.tudou.com/v4/album/videos.*
 api.3g.tudou.com/todou/play/detail/desc.*
+api.mobile.youku.com/layout/android3_0/play/detail.*
+api.mobile.youku.com/shows/.*/reverse/videos.*
 
 { +filter{youkuappsuck} +force-text-mode }
 play.api.3g.tudou.com/v.*
@@ -140,6 +142,9 @@ geo.js.kankan.xunlei.com/.*
 { +filter{cntvvideosuck} +force-text-mode +forward-override{forward .} }
 vdn.apps.cntv.cn/api/getHttpVideoInfo\.do\?.*
 
+{ +filter{duokanboxsuck} +force-text-mode +forward-override{forward .} }
+internal.check.duokanbox.com/check\.json
+
 { +add-header{X-Forwarded-For: 58.255.55.161} +forward-override{forward .} }
 epg.api.pptv.com/detail\.api\?.*
 play.api.pptv.com/boxplay\.api\?.*
@@ -165,9 +170,6 @@ vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv5.*
 vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv6.*
 vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv8.*
 vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdbtv6.*
-
-{+redirect{s@^http://api@http://v@}}
-api.youku.com/player/getPlayList/VideoIDS/.*
 
 {+block{Video ads}}
 vv.video.qq.com/getvmind\?.*

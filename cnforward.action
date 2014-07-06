@@ -108,6 +108,8 @@ vip.sports.cntv.cn/check\.do.*
 vip.sports.cntv.cn/play\.do.*
 vip.sports.cntv.cn/servlets/encryptvideopath\.do.*
 
+a.play.api.3g.youku.com/common/v3/play\?.*
+api.mobile.youku.com/openapi-wireless/videos/.*/download\?.*
 api.3g.youku.com/layout.*
 api.3g.youku.com/v3/play/address.*
 api.3g.youku.com/openapi-wireless/videos/.*/download.*
@@ -189,6 +191,7 @@ openapi.youku.com/.*
 220.181.154.137/.*
 httpbin.org/get
 tms.is.ysten.com:8080/yst-tms/login\.action\?.*
+internal.check.duokanbox.com/check\.json
 chrome.2345.com/dianhua/mobileApi/check\.php
 180.153.225.136/.*
 118.244.244.124/.*
