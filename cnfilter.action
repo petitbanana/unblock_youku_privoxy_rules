@@ -145,7 +145,7 @@ vdn.apps.cntv.cn/api/getHttpVideoInfo\.do\?.*
 { +filter{duokanboxsuck} +force-text-mode +forward-override{forward .} }
 internal.check.duokanbox.com/check\.json
 
-{ +add-header{X-Forwarded-For: 58.255.55.161} +forward-override{forward .} }
+{ +change-x-forwarded-for{block} +add-header{X-Forwarded-For: 58.255.55.161} +forward-override{forward .} }
 epg.api.pptv.com/detail\.api\?.*
 play.api.pptv.com/boxplay\.api\?.*
 web-play.pptv.com/.*
@@ -155,21 +155,21 @@ live.gslb.letv.com/gslb\?.*
 {+redirect{s@^http://ark.letv.com/s\?(.*)ark=\d+(.*)@http://ark.letv.com/s?$1ark=2$2@}}
 ark.letv.com/s\?.*ark=\d+.*
 
-{+redirect{s@^http://v.aty.sohu.com/v\?(.*)fee=0(.*)@http://v.aty.sohu.com/v\?$1fee=1$2@}}
-v.aty.sohu.com/v\?.*fee=0.*
+#{+redirect{s@^http://v.aty.sohu.com/v\?(.*)fee=0(.*)@http://v.aty.sohu.com/v\?$1fee=1$2@}}
+#v.aty.sohu.com/v\?.*fee=0.*
 
 {+redirect{s@^http://valf.atm.youku.com/vf\?(.*)paid=0(.*)@http://valf.atm.youku.com/vf\?$1paid=1$2@}}
 valf.atm.youku.com/vf\?.*paid=0.*
 
-{+redirect{s@cctv_p2p_hd(cc|b)tv(\d).*@cctv_p2p_hd$1tv$2@}}
-vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdcctv5.*
-vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdcctv6.*
-vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdcctv8.*
-vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdbtv6.*
-vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv5.*
-vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv6.*
-vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv8.*
-vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdbtv6.*
+#{+redirect{s@cctv_p2p_hd(cc|b)tv(\d).*@cctv_p2p_hd$1tv$2@}}
+#vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdcctv5.*
+#vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdcctv6.*
+#vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdcctv8.*
+#vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdbtv6.*
+#vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv5.*
+#vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv6.*
+#vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdcctv8.*
+#vdn.apps.cntv.cn/api/getLiveUrlCommonApi\.do\?pa://cctv_p2p_hdbtv6.*
 
 {+block{Video ads}}
 vv.video.qq.com/getvmind\?.*

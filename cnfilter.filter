@@ -137,7 +137,7 @@ s|\x0a\[tracker2\]||
 s|\x0a\[tracker3\]||
 s|\x0atracker_info.*:CNC:.*||g
 s|\x0atracker_info.*:CT:.*||g
-s|\[stun\]|tracker_info41=119\.188\.110\.85:8989:1:CRTC:North\x0atracker_info45=119\.97\.157\.190:8989:2:CRTC:North\x0atracker_info48=119\.97\.157\.164:8989:3:CRTC:North\x0atracker_info49=119\.97\.145\.16:8989:4:CRTC:North\x0atracker_info51=119\.97\.145\.16:8989:5:CRTC:North\x0a\[stun\]|
+s|\[stun\]|tracker_info41=119\.188\.110\.85:8989:1:CRTC:North\x0atracker_info45=119\.97\.157\.190:8989:2:CRTC:North\x0atracker_info48=119\.97\.157\.164:8989:3:CRTC:North\x0atracker_info49=119\.97\.145\.15:8989:4:CRTC:North\x0atracker_info51=119\.97\.145\.15:8989:5:CRTC:North\x0a\[stun\]|
 
 FILTER: youkuappsuck Replace "limit":1 with "limit":0
 s|"limit":1|"limit":0|g
@@ -178,7 +178,7 @@ s|.*||g
 s||49-53-54-49-49-48-48-48-48|
 
 FILTER: cntvipplayer change to CN player setting
-s/="..\|.*/="CN|BJ|NULL|0"/
+s/="..\|.*/="CN|BJ|NULL|1"/
 
 FILTER: cntvvideosuck change is_invalid_copyright, is_protected to 0 
 s|is_invalid_copyright":"1"|is_invalid_copyright":"0"|
