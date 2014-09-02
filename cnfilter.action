@@ -112,12 +112,6 @@ play.api.3g.tudou.com/v.*
 { +filter{youkuappad} +force-text-mode }
 pl.youku.com/playlist/m3u8\?keyframe=0&.*
 
-{ +filter{cntvgeoservice} +force-text-mode +forward-override{forward .} }
-gridsum-vd.cntv.cn/geoservice/g\.aspx.*
-
-{ +filter{cntvipplayer} +force-text-mode +forward-override{forward .} }
-ip.apps.cntv.cn/js/player\.do.*
-
 { +filter{iqiyisuck} +force-text-mode +forward-override{forward .} }
 data.video.qiyi.com/v\.(f4v|ts)\?.*
 cache.vip.qiyi.com/vms\?.*
@@ -139,6 +133,10 @@ dynamic.live.app.m.letv.com/android/dynamic\.php\?.*act=canplay.*
 { +filter{kankansuck} +force-text-mode +forward-override{forward .} }
 geo.js.kankan.xunlei.com/.*
 
+{ +filter{qqfilmsuck} +force-text-mode +forward-override{forward .} }
+aid.video.qq.com/fcgi-bin/userip\?.*
+aidbak.video.qq.com/fcgi-bin/userip\?.*
+
 { +filter{cntvvideosuck} +force-text-mode +forward-override{forward .} }
 vdn.apps.cntv.cn/api/getHttpVideoInfo\.do\?.*
 
@@ -151,12 +149,15 @@ play.api.pptv.com/boxplay\.api\?.*
 web-play.pptv.com/.*
 web-play.pplive.cn/.*
 live.gslb.letv.com/gslb\?.*
+ac.qq.com/.*/v/cid/.*
+*.ssports.com/.*
+ssports.com/.*
 
 {+redirect{s@^http://ark.letv.com/s\?(.*)ark=\d+(.*)@http://ark.letv.com/s?$1ark=2$2@}}
 ark.letv.com/s\?.*ark=\d+.*
 
-#{+redirect{s@^http://v.aty.sohu.com/v\?(.*)fee=0(.*)@http://v.aty.sohu.com/v\?$1fee=1$2@}}
-#v.aty.sohu.com/v\?.*fee=0.*
+{+redirect{s@^http://v.aty.sohu.com/v\?(.*)fee=0(.*)@http://v.aty.sohu.com/v\?$1fee=2$2@}}
+v.aty.sohu.com/v\?.*fee=0.*
 
 {+redirect{s@^http://valf.atm.youku.com/vf\?(.*)paid=0(.*)@http://valf.atm.youku.com/vf\?$1paid=1$2@}}
 valf.atm.youku.com/vf\?.*paid=0.*

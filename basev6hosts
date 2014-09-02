@@ -50,6 +50,7 @@
 2001:470:832e:1024:6969:5269::1  vip.sports.cntv.cn
 2001:470:832e:1024:6969:5269::1  a.play.api.3g.youku.com
 2001:470:832e:1024:6969:5269::1  i.play.api.3g.youku.com
+2001:470:832e:1024:6969:5269::1  api.mobile.youku.com
 2001:470:832e:1024:6969:5269::1  api.3g.youku.com
 2001:470:832e:1024:6969:5269::1  tv.api.3g.youku.com
 2001:470:832e:1024:6969:5269::1  play.api.3g.youku.com
@@ -89,3 +90,6 @@
 2001:470:832e:1024:6969:5269::1  internal.check.duokanbox.com
 
 2001:470:832e:1024:6969:5269::1  vdo.mobile.tvb.com
+#58.241.28.216  www.dongting.com
+#58.215.179.68  www.dongting.com
+#218.205.72.4  www.dongting.com

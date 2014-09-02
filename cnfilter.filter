@@ -173,12 +173,8 @@ s|"tvcCode":"\-2|"tvcCode":"-1|g
 FILTER: kankansuck change kkarea to 1
 s|var kkarea = .*;|var kkarea = 1;|
 
-FILTER: cntvgeoservice change to CN geoservice setting
-s|.*||g
-s||49-53-54-49-49-48-48-48-48|
-
-FILTER: cntvipplayer change to CN player setting
-s/="..\|.*/="CN|BJ|NULL|1"/
+FILTER: qqfilmsuck change limit to 0
+s|limit":1|limit":0|
 
 FILTER: cntvvideosuck change is_invalid_copyright, is_protected to 0 
 s|is_invalid_copyright":"1"|is_invalid_copyright":"0"|
