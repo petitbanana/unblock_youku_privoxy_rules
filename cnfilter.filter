@@ -28,6 +28,7 @@ s|var GRestrictive = true;|var GRestrictive = false;|
 s|var tmp_restrictive = isRestrictive\(x\)|var tmp_restrictive = false|
 s|data-res-copyright="0"|data-res-copyright="1"|g
 s|data-copyright="0"|data-copyright="1"|g
+#s|copyright="0"|copyright="1"|g
 s|li class="js-dis"|li onmouseover="this.className='z-hvr'" onmouseout="this.className=''"|g
 s|class="(.*) js-dis">|class="$1">|g
 
