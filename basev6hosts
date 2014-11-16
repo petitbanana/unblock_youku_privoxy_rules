@@ -43,6 +43,7 @@
 2001:470:832e:1024:6969:5269::1  www.yinyuetai.com
 2001:470:832e:1024:6969:5269::1  api.letv.com
 2001:470:832e:1024:6969:5269::1  live.gslb.letv.com
+2001:470:832e:1024:6969:5269::1  static.itv.letv.com
 2001:470:832e:1024:6969:5269::1  gridsum-vd.cntv.cn
 2001:470:832e:1024:6969:5269::1  ip.apps.cntv.cn
 2001:470:832e:1024:6969:5269::1  vdn.live.cntv.cn
@@ -62,6 +63,7 @@
 2001:470:832e:1024:6969:5269::1  iface2.iqiyi.com
 2001:470:832e:1024:6969:5269::1  cache.m.iqiyi.com
 2001:470:832e:1024:6969:5269::1  m.letv.com
+2001:470:832e:1024:6969:5269::1  interface.bilibili.com
 2001:470:832e:1024:6969:5269::1  dynamic.app.m.letv.com
 2001:470:832e:1024:6969:5269::1  dynamic.meizi.app.m.letv.com
 2001:470:832e:1024:6969:5269::1  dynamic.search.app.m.letv.com
