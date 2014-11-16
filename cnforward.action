@@ -96,8 +96,10 @@ www.yinyuetai.com/main/get-.*
 api.letv.com/mms/out/video/play.*
 api.letv.com/mms/out/common/geturl.*
 api.letv.com/geturl.*
+api.letv.com/api/geturl.*
 #    script filter by privoxy, proxy not needed for letvlive
 #live.gslb.letv.com/gslb\?.*
+static.itv.letv.com/api.*
 ip.apps.cntv.cn/js/player\.do.*
 vdn.apps.cntv.cn/api/get.*
 vdn.live.cntv.cn/api2/liveHtml5\.do\?channel=pa://cctv_p2p_hdcctv5.*
@@ -135,6 +137,7 @@ cache.m.iqiyi.com/jp/tmts/.*
 #    script filter by privoxy, proxy not needed for letv
 #api.letv.com/getipgeo
 m.letv.com/api/geturl\?.*
+interface.bilibili.com/playurl\?.*
 dynamic.app.m.letv.com/.*/dynamic\.php\?.*ctl=videofile.*
 dynamic.meizi.app.m.letv.com/.*/dynamic\.php\?.*ctl=videofile.*
 dynamic.search.app.m.letv.com/.*/dynamic\.php\?.*ctl=videofile.*
@@ -175,6 +178,7 @@ music.baidu.com/data/music/links\?.*
 #music.163.com/api/copyright/restrict/\?.*
 #   script filter by privoxy, proxy not needed for xiamimusic
 #spark.api.xiami.com/api\?.*method=AuthIp.*
+#spark.api.xiami.com/api\?.*method=Start\.init.*
 #spark.api.xiami.com/api\?.*method=Songs\.getTrackDetail.*
 #spark.api.xiami.com/api\?.*method=Songs\.detail.*
 #www.xiami.com/web/.*
