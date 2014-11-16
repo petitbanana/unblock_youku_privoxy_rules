@@ -65,6 +65,7 @@
 ~.dpool.sina.com.cn
 ~api.letv.com
 ~live.gslb.letv.com
+~static.itv.letv.com
 ~gridsum-vd.cntv.cn
 ~ip.apps.cntv.cn
 ~vdn.live.cntv.cn
@@ -84,6 +85,7 @@
 ~iface2.iqiyi.com
 ~cache.m.iqiyi.com
 ~m.letv.com
+~interface.bilibili.com
 ~dynamic.app.m.letv.com
 ~dynamic.meizi.app.m.letv.com
 ~dynamic.search.app.m.letv.com
