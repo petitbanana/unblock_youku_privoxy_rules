@@ -4,6 +4,7 @@
 #https://twitter.com/karlcheong
 
 { +filter{wildcardcrossdomain} +force-text-mode +forward-override{forward .} }
+.bilibili.com/crossdomain\.xml.*
 .youku.com/crossdomain\.xml.*
 .qiyi.com/crossdomain\.xml.*
 .iqiyi.com/crossdomain\.xml.*
@@ -32,6 +33,7 @@ music.163.com/album\?.*
 music.163.com/playlist\?.*
 music.163.com/song\?.*
 music.163.com/artist\?.*
+music.163.com/dj\?.*
 
 { +filter{kgmusicappsuck} +force-text-mode +forward-override{forward .} }
 mobilefeedback.kugou.com/.*
@@ -42,7 +44,7 @@ ip.kugou.com/check/isCn/.*
 serviceinfo.sdk.duomi.com/api/serviceinfo/getserverlist.*
 
 {+filter{163musicappsuck} +force-text-mode +forward-override{forward .} }
-music.163.com/api/copyright/restrict/\?.*
+music.163.com/api/copyright/restrict/.*
 music.163.com/api/batch
 
 #{ +filter{xiamimusicsuck} +force-text-mode +forward-override{forward .} }
@@ -54,6 +56,7 @@ spark.api.xiami.com/api\?.*method=Songs\.detail.*
 www.xiami.com/.*
 www.xiami.com/web/spark.*
 www.xiami.com/web/.*\?.*xiamitoken=.*
+interface.bilibili.com/playurl\?.*
 
 { +filter{mytvhdsuck} +force-text-mode +forward-override{forward .} }
 vdo.mobile.tvb.com/2\.0/mytvhd/cc\.php
@@ -103,11 +106,9 @@ api.3g.youku.com/layout/ios3_0/play/detail.*
 api.3g.tudou.com/v3_3/album/videos.*
 api.3g.tudou.com/v4/album/videos.*
 api.3g.tudou.com/todou/play/detail/desc.*
+play.api.3g.tudou.com/v.*
 api.mobile.youku.com/layout/android3_0/play/detail.*
 api.mobile.youku.com/shows/.*/reverse/videos.*
-
-{ +filter{youkuappsuck} +force-text-mode }
-play.api.3g.tudou.com/v.*
 
 { +filter{youkuappad} +force-text-mode }
 pl.youku.com/playlist/m3u8\?keyframe=0&.*
@@ -144,6 +145,7 @@ vdn.apps.cntv.cn/api/getHttpVideoInfo\.do\?.*
 internal.check.duokanbox.com/check\.json
 
 { +change-x-forwarded-for{block} +add-header{X-Forwarded-For: 58.255.55.161} +forward-override{forward .} }
+www.bilibili.com
 epg.api.pptv.com/detail\.api\?.*
 play.api.pptv.com/boxplay\.api\?.*
 web-play.pptv.com/.*
@@ -159,8 +161,11 @@ ark.letv.com/s\?.*ark=\d+.*
 {+redirect{s@^http://v.aty.sohu.com/v\?(.*)fee=0(.*)@http://v.aty.sohu.com/v\?$1fee=2$2@}}
 v.aty.sohu.com/v\?.*fee=0.*
 
-{+redirect{s@^http://valf.atm.youku.com/vf\?(.*)paid=0(.*)@http://valf.atm.youku.com/vf\?$1paid=1$2@}}
-valf.atm.youku.com/vf\?.*paid=0.*
+#{+redirect{s@^http://valf.atm.youku.com/vf\?(.*)paid=0(.*)@http://valf.atm.youku.com/vf\?$1paid=1$2@}}
+#valf.atm.youku.com/vf\?.*paid=0.*
+
+{+redirect{s@^http://valf.atm.youku.com/vf\?(.*)bt=pc(.*)@http://valf.atm.youku.com/vf\?$1bt=phone$2@}}
+valf.atm.youku.com/vf\?.*bt=.*
 
 #{+redirect{s@cctv_p2p_hd(cc|b)tv(\d).*@cctv_p2p_hd$1tv$2@}}
 #vdn.live.cntv.cn/api2/live\.do\?channel=pa://cctv_p2p_hdcctv5.*
