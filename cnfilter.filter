@@ -40,6 +40,8 @@ s|"overseaip":1|"overseaip":0|g
 
 FILTER: 163musicappsuck Replace restrictedCopyright":[5002,5003,5001], to [],
 s|"restrictedCopyright":\[.*\],|"restrictedCopyright":[],|
+s|"status":\-1,|"status":0,|g
+s|"status":1,|"status":0,|g
 
 FILTER: xiamimusicsuck Replace play_authority":0 with play_authority":1
 s|play_authority":0|play_authority":1|g
