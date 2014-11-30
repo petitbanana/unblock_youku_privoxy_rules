@@ -46,6 +46,10 @@ serviceinfo.sdk.duomi.com/api/serviceinfo/getserverlist.*
 {+filter{163musicappsuck} +force-text-mode +forward-override{forward .} }
 music.163.com/api/copyright/restrict/.*
 music.163.com/api/batch
+music.163.com/api/search/get\?.*
+music.163.com/api/artist/.*
+music.163.com/api/song/detail.*
+music.163.com/api/album/.*
 
 #{ +filter{xiamimusicsuck} +force-text-mode +forward-override{forward .} }
 { +add-header{Client-IP: 219.158.33.69} +forward-override{forward .} }
